@@ -8,7 +8,6 @@ import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
-import android.util.Log;
 
 public class Barometer {
 	private static final int TEXT_SIZE = 16;
@@ -41,8 +40,6 @@ public class Barometer {
 	}
 
 	private float millibarToDegrees(float millibars) {
-		Log.i("BARO", String.format("%f %f %f %f", firstStepDegrees, millibars, valuesMillibar[0], degreesPerMilliBar));
-		Log.i("BARO", "Ret = " + (firstStepDegrees + (millibars - valuesMillibar[0]) * degreesPerMilliBar));
 		return firstStepDegrees + (millibars - valuesMillibar[0]) * degreesPerMilliBar;
 	}
 
