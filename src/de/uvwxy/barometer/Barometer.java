@@ -1,5 +1,7 @@
 package de.uvwxy.barometer;
 
+import de.uvwxy.daisy.common.sensors.BarometerReader;
+import de.uvwxy.daisy.common.sensors.SensorReader.SensorResultCallback;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,16 +10,18 @@ import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
+import android.hardware.SensorEvent;
+import android.hardware.SensorManager;
 
 public class Barometer {
 	private static final int TEXT_SIZE = 16;
 	private final float degreesPerStep = +30f;
 	private final float millsPerStep = 10f;
-	private final float firstStepDegrees = -134f;
+	private final float firstStepDegrees = -135f;
 	private final float degreesPerMilliBar = degreesPerStep / millsPerStep;
 	float[] valuesMillibar = new float[] { 960, 970, 980, 990, 1000, 1010, 1020, 1030, 1040, 1050 };
 
-	private final int textY = 64 + 48;
+	private final int textY = 64 + 32;
 
 	private Bitmap face = null;
 	private Bitmap knob = null;
@@ -40,7 +44,13 @@ public class Barometer {
 	}
 
 	private float millibarToDegrees(float millibars) {
-		return firstStepDegrees + (millibars - valuesMillibar[0]) * degreesPerMilliBar;
+		float deg = firstStepDegrees + (millibars - valuesMillibar[0]) * degreesPerMilliBar;
+		float limLeft = firstStepDegrees - degreesPerMilliBar * 5;
+		float limRight = limLeft * -1;
+		deg = deg < limLeft ? limLeft : deg;
+		deg = deg > limRight ? limRight : deg;
+
+		return deg;
 	}
 
 	protected Bitmap drawMillisWithMemory(float millisCurrent, float millisMemory) {
@@ -62,15 +72,14 @@ public class Barometer {
 		matrix = new Matrix();
 		canvas.drawBitmap(knob, matrix, paint);
 
-		canvas.drawText(String.format("%.2f", millisCurrent), canvas.getWidth() / 2, canvas.getHeight() - textY - TEXT_SIZE, paint);
-
+		canvas.drawText(String.format("%.2f mb", millisCurrent), canvas.getWidth() / 2, canvas.getHeight() - textY, paint);
+		canvas.drawText(String.format("[%.2f mb]", (millisCurrent - millisMemory)), canvas.getWidth() / 2, canvas.getHeight() - textY + TEXT_SIZE, paint);
+		canvas.drawText(String.format("[%.0f m]", BarometerReader.getHeightFromDiff(millisCurrent, millisMemory)), canvas.getWidth() / 2, canvas.getHeight()
+				- textY + 2 * TEXT_SIZE, paint);
 		return face;
 	}
 
 	protected Bitmap drawUnitsMillibar() {
-
-		float degreesPerStep = +30f;
-		float firstStepDegrees = -134f;
 
 		Paint paint = new Paint();
 		paint.setTextSize(TEXT_SIZE);
@@ -93,7 +102,7 @@ public class Barometer {
 
 		canvas.restore();
 
-		canvas.drawText("mb", canvas.getWidth() / 2, canvas.getHeight() - textY, paint);
+		//canvas.drawText("mb", canvas.getWidth() / 2, canvas.getHeight() - textY, paint);
 
 		return bm;
 	}

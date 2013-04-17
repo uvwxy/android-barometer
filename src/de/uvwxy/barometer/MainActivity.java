@@ -21,36 +21,49 @@ import de.uvwxy.daisy.helper.ViewTools;
 public class MainActivity extends Activity {
 	private final static String PREF_ID = "BARO_SETTINGS";
 	private final static String PREF_BARO_OLD = "BARO_SETTINGS";
-	private final static String PREF_SHOW_HELP = "SHOW_HELP";
 
 	private Context ctx = this;
 	private RelativeLayout rlMain = null;
 	private ImageView ivBaro = null;
 
-	Barometer baro = null;
+	private long lastTap = System.currentTimeMillis();
+	private long tapSpeed = 500;
 
+	private BarometerReader baroReader = null;
+	private Barometer baro = null;
+	private float oldValue;
+	private float currentValue;
+
+	private boolean save = false;
+
+	int x = 0;
 	private SensorResultCallback cb = new SensorResultCallback() {
 
 		@Override
 		public void result(float[] f) {
-			currentValue = f[0];
-			Bitmap temp = baro.drawMillisWithMemory(currentValue, lastValue);
-			int w = ivBaro.getWidth();
-			int h = ivBaro.getHeight();
-			int l = w <= h ? w : h;
-			if (l != 0) {
-				ivBaro.setImageBitmap(BitmapTools.scaleBitmap(temp, l, l, true));
+			if (f != null & f.length != 1) {
+				currentValue = f[0];
+
+				// split in if else to avoid values changing after reading
+				if (save) {
+					oldValue = currentValue;
+					writeValues();
+					save = false;
+					Toast.makeText(ctx, "Saved", Toast.LENGTH_SHORT).show();
+				}
+
+				Bitmap temp = baro.drawMillisWithMemory(currentValue, oldValue);
+
+				int w = ivBaro.getWidth();
+				int h = ivBaro.getHeight();
+				int l = w <= h ? w : h;
+
+				if (l != 0) {
+					ivBaro.setImageBitmap(BitmapTools.scaleBitmap(temp, l, l, true));
+				}
 			}
 		}
 	};
-
-	BarometerReader baroReader = null;
-
-	private float lastValue;
-	private float currentValue;
-
-	private long lastTap = System.currentTimeMillis();
-	private long tapSpeed = 500;
 
 	private void initGUI() {
 		rlMain = (RelativeLayout) findViewById(R.id.rlMain);
@@ -63,7 +76,6 @@ public class MainActivity extends Activity {
 				if (System.currentTimeMillis() - lastTap > 1250) {
 
 					updateBaro();
-
 					lastTap = System.currentTimeMillis();
 				}
 			}
@@ -73,12 +85,9 @@ public class MainActivity extends Activity {
 
 			@Override
 			public boolean onLongClick(View v) {
-
-				writeValues();
+				save = true;
 				updateBaro();
-				Toast.makeText(ctx, "Saved", Toast.LENGTH_SHORT).show();
-
-				return false;
+				return true;
 			}
 		});
 
@@ -93,17 +102,12 @@ public class MainActivity extends Activity {
 		initGUI();
 		baro = new Barometer();
 		baro.loadBitmaps(this);
-		baroReader = new BarometerReader(this, -2, cb);
+		baroReader = new BarometerReader(this, 50, cb);
 		readValues();
 
-		int w = ivBaro.getWidth();
-		int h = ivBaro.getHeight();
-		int l = w <= h ? w : h;
-		if (l != 0) {
-			ivBaro.setImageBitmap(BitmapTools.scaleBitmap(baro.drawUnitsMillibar(), l, l, true));
+		if (ViewTools.isFirstLaunch(this, PREF_ID)) {
+			save = true;
 		}
-
-		ViewTools.showHelpOnce(this, PREF_ID, "Usage:", "OK", "Click to refresh\nLongClick to save");
 	}
 
 	@Override
@@ -114,6 +118,13 @@ public class MainActivity extends Activity {
 
 	@Override
 	protected void onResume() {
+		int w = ivBaro.getWidth();
+		int h = ivBaro.getHeight();
+		int l = w <= h ? w : h;
+		if (l != 0) {
+			ivBaro.setImageBitmap(BitmapTools.scaleBitmap(baro.drawUnitsMillibar(), l, l, true));
+		}
+
 		updateBaro();
 		super.onResume();
 	}
@@ -125,7 +136,7 @@ public class MainActivity extends Activity {
 	private void readValues() {
 
 		SharedPreferences settings = getSharedPreferences(PREF_ID, 0);
-		lastValue = settings.getFloat(PREF_BARO_OLD, -1);
+		oldValue = settings.getFloat(PREF_BARO_OLD, -1);
 	}
 
 	private void writeValues() {

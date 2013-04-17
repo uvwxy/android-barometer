@@ -3,4 +3,6 @@
 
     <string name="app_name">Barometer</string>
 
+    <string name="help">long click to save, tap to refresh</string>
+
 </resources>

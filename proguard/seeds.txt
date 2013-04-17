@@ -10,10 +10,12 @@ de.uvwxy.barometer.R$drawable: int ic_launcher
 de.uvwxy.barometer.R$id: int ivBaro
 de.uvwxy.barometer.R$id: int ivPhoto
 de.uvwxy.barometer.R$id: int rlMain
+de.uvwxy.barometer.R$id: int tvInfo
 de.uvwxy.barometer.R$id: int tvPhotoInfo
 de.uvwxy.barometer.R$layout: int activity_main
 de.uvwxy.barometer.R$layout: int item_photolist
 de.uvwxy.barometer.R$string: int app_name
+de.uvwxy.barometer.R$string: int help
 de.uvwxy.barometer.R$style: int AppBaseTheme
 de.uvwxy.barometer.R$style: int AppTheme
 de.uvwxy.daisy.common.R$drawable: int ic_launcher
