@@ -1,4 +1,35 @@
-de.uvwxy.barometer.Barometer -> de.uvwxy.barometer.a:
+de.uvwxy.barometer.BaroSettings -> de.uvwxy.barometer.a:
+    float baroDiff -> a
+    boolean loadedOnce -> b
+    float getDiffedBaro(android.content.Context,float) -> a
+    boolean loadDiff(android.content.Context) -> a
+    void saveDiff(android.content.Context) -> b
+    void showConfig(android.content.Context,float) -> b
+    void access$0(float) -> a
+    float access$1() -> a
+de.uvwxy.barometer.BaroSettings$1 -> de.uvwxy.barometer.b:
+    android.app.Dialog val$dialog -> a
+    void onClick(android.view.View) -> onClick
+de.uvwxy.barometer.BaroSettings$2 -> de.uvwxy.barometer.c:
+    android.content.Context val$ctx -> a
+    android.widget.EditText val$etBaroRefValue -> b
+    float val$origBaro -> c
+    android.widget.TextView val$tvBaroDiffValue -> d
+    void onClick(android.view.View) -> onClick
+de.uvwxy.barometer.BaroSettings$3 -> de.uvwxy.barometer.d:
+    android.widget.EditText val$etBaroRefValue -> a
+    float val$origBaro -> b
+    android.content.Context val$ctx -> c
+    android.app.Dialog val$dialog -> d
+    void onClick(android.view.View) -> onClick
+de.uvwxy.barometer.BaroSettings$4 -> de.uvwxy.barometer.e:
+    android.widget.EditText val$etBaroRefValue -> a
+    float val$origBaro -> b
+    android.widget.TextView val$tvBaroDiffValue -> c
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+de.uvwxy.barometer.Barometer -> de.uvwxy.barometer.f:
     float degreesPerStep -> b
     float millsPerStep -> c
     float firstStepDegrees -> d
@@ -17,15 +48,17 @@ de.uvwxy.barometer.MainActivity -> de.uvwxy.barometer.MainActivity:
     android.content.Context ctx -> b
     android.widget.RelativeLayout rlMain -> c
     android.widget.ImageView ivBaro -> d
-    long lastTap -> e
-    long tapSpeed -> f
-    de.uvwxy.daisy.common.sensors.BarometerReader baroReader -> g
-    de.uvwxy.barometer.Barometer baro -> h
-    float oldValue -> i
-    float currentValue -> j
-    boolean save -> k
+    android.widget.TextView tvInfo -> e
+    long lastTap -> f
+    long tapSpeed -> g
+    de.uvwxy.daisy.common.sensors.BarometerReader baroReader -> h
+    de.uvwxy.barometer.Barometer baro -> i
+    float oldValue -> j
+    float origValue -> k
+    float currentValue -> l
+    boolean save -> m
     int x -> a
-    de.uvwxy.daisy.common.sensors.SensorReader$SensorResultCallback cb -> l
+    de.uvwxy.daisy.common.sensors.SensorReader$SensorResultCallback cb -> n
     void initGUI() -> a
     void onCreate(android.os.Bundle) -> onCreate
     void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
@@ -34,27 +67,32 @@ de.uvwxy.barometer.MainActivity -> de.uvwxy.barometer.MainActivity:
     void readValues() -> c
     void writeValues() -> d
     void access$0(de.uvwxy.barometer.MainActivity,float) -> a
-    boolean access$1(de.uvwxy.barometer.MainActivity) -> a
-    float access$2(de.uvwxy.barometer.MainActivity) -> b
-    void access$3(de.uvwxy.barometer.MainActivity,float) -> b
-    void access$4(de.uvwxy.barometer.MainActivity) -> c
-    void access$5(de.uvwxy.barometer.MainActivity,boolean) -> a
-    android.content.Context access$6(de.uvwxy.barometer.MainActivity) -> d
-    de.uvwxy.barometer.Barometer access$7(de.uvwxy.barometer.MainActivity) -> e
-    float access$8(de.uvwxy.barometer.MainActivity) -> f
-    android.widget.ImageView access$9(de.uvwxy.barometer.MainActivity) -> g
-    long access$10(de.uvwxy.barometer.MainActivity) -> h
-    void access$11(de.uvwxy.barometer.MainActivity) -> i
-    void access$12(de.uvwxy.barometer.MainActivity,long) -> a
-de.uvwxy.barometer.MainActivity$1 -> de.uvwxy.barometer.b:
+    float access$1(de.uvwxy.barometer.MainActivity) -> a
+    void access$2(de.uvwxy.barometer.MainActivity,float) -> b
+    android.content.Context access$3(de.uvwxy.barometer.MainActivity) -> b
+    boolean access$4(de.uvwxy.barometer.MainActivity) -> c
+    void access$5(de.uvwxy.barometer.MainActivity,float) -> c
+    void access$6(de.uvwxy.barometer.MainActivity) -> d
+    void access$7(de.uvwxy.barometer.MainActivity,boolean) -> a
+    de.uvwxy.barometer.Barometer access$8(de.uvwxy.barometer.MainActivity) -> e
+    float access$9(de.uvwxy.barometer.MainActivity) -> f
+    android.widget.ImageView access$10(de.uvwxy.barometer.MainActivity) -> g
+    long access$11(de.uvwxy.barometer.MainActivity) -> h
+    void access$12(de.uvwxy.barometer.MainActivity) -> i
+    void access$13(de.uvwxy.barometer.MainActivity,long) -> a
+    float access$14(de.uvwxy.barometer.MainActivity) -> j
+de.uvwxy.barometer.MainActivity$1 -> de.uvwxy.barometer.g:
     de.uvwxy.barometer.MainActivity this$0 -> a
     void result(float[]) -> a
-de.uvwxy.barometer.MainActivity$2 -> de.uvwxy.barometer.c:
+de.uvwxy.barometer.MainActivity$2 -> de.uvwxy.barometer.h:
     de.uvwxy.barometer.MainActivity this$0 -> a
     void onClick(android.view.View) -> onClick
-de.uvwxy.barometer.MainActivity$3 -> de.uvwxy.barometer.d:
+de.uvwxy.barometer.MainActivity$3 -> de.uvwxy.barometer.i:
     de.uvwxy.barometer.MainActivity this$0 -> a
     boolean onLongClick(android.view.View) -> onLongClick
+de.uvwxy.barometer.MainActivity$4 -> de.uvwxy.barometer.j:
+    de.uvwxy.barometer.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
 de.uvwxy.daisy.common.filters.SensorFilter -> de.uvwxy.a.a.a.a:
     float[] nonInplaceValues -> a
     float[] filter(float[],float[]) -> a

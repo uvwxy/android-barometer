@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import de.uvwxy.daisy.common.sensors.BarometerReader;
 import de.uvwxy.daisy.common.sensors.SensorReader.SensorResultCallback;
@@ -19,12 +20,13 @@ import de.uvwxy.daisy.helper.BitmapTools;
 import de.uvwxy.daisy.helper.ViewTools;
 
 public class MainActivity extends Activity {
-	private final static String PREF_ID = "BARO_SETTINGS";
+	protected final static String PREF_ID = "BARO_SETTINGS";
 	private final static String PREF_BARO_OLD = "BARO_SETTINGS";
 
 	private Context ctx = this;
 	private RelativeLayout rlMain = null;
 	private ImageView ivBaro = null;
+	private TextView tvInfo = null;
 
 	private long lastTap = System.currentTimeMillis();
 	private long tapSpeed = 500;
@@ -32,6 +34,7 @@ public class MainActivity extends Activity {
 	private BarometerReader baroReader = null;
 	private Barometer baro = null;
 	private float oldValue;
+	private float origValue;
 	private float currentValue;
 
 	private boolean save = false;
@@ -41,8 +44,10 @@ public class MainActivity extends Activity {
 
 		@Override
 		public void result(float[] f) {
-			if (f != null & f.length != 1) {
+			if (f != null && f.length >= 1) {
 				currentValue = f[0];
+				origValue = currentValue;
+				currentValue = BaroSettings.getDiffedBaro(ctx, currentValue);
 
 				// split in if else to avoid values changing after reading
 				if (save) {
@@ -68,9 +73,9 @@ public class MainActivity extends Activity {
 	private void initGUI() {
 		rlMain = (RelativeLayout) findViewById(R.id.rlMain);
 		ivBaro = (ImageView) findViewById(R.id.ivBaro);
+		tvInfo = (TextView) findViewById(R.id.tvInfo);
 
 		ivBaro.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
 				if (System.currentTimeMillis() - lastTap > 1250) {
@@ -82,12 +87,18 @@ public class MainActivity extends Activity {
 		});
 
 		ivBaro.setOnLongClickListener(new OnLongClickListener() {
-
 			@Override
 			public boolean onLongClick(View v) {
 				save = true;
 				updateBaro();
 				return true;
+			}
+		});
+
+		tvInfo.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				BaroSettings.showConfig(ctx, origValue);
 			}
 		});
 

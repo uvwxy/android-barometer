@@ -1,5 +1,7 @@
 package de.uvwxy.barometer;
 
+import java.util.Locale;
+
 import de.uvwxy.daisy.common.sensors.BarometerReader;
 import de.uvwxy.daisy.common.sensors.SensorReader.SensorResultCallback;
 import android.content.Context;
@@ -72,10 +74,11 @@ public class Barometer {
 		matrix = new Matrix();
 		canvas.drawBitmap(knob, matrix, paint);
 
-		canvas.drawText(String.format("%.2f mb", millisCurrent), canvas.getWidth() / 2, canvas.getHeight() - textY, paint);
-		canvas.drawText(String.format("[%.2f mb]", (millisCurrent - millisMemory)), canvas.getWidth() / 2, canvas.getHeight() - textY + TEXT_SIZE, paint);
-		canvas.drawText(String.format("[%.0f m]", BarometerReader.getHeightFromDiff(millisCurrent, millisMemory)), canvas.getWidth() / 2, canvas.getHeight()
-				- textY + 2 * TEXT_SIZE, paint);
+		canvas.drawText(String.format(Locale.US, "%.2f mb", millisCurrent), canvas.getWidth() / 2, canvas.getHeight() - textY, paint);
+		canvas.drawText(String.format(Locale.US, "[%.2f mb]", (millisCurrent - millisMemory)), canvas.getWidth() / 2, canvas.getHeight() - textY + TEXT_SIZE,
+				paint);
+		canvas.drawText(String.format(Locale.US, "[%.0f m]", BarometerReader.getHeightFromDiff(millisCurrent, millisMemory)), canvas.getWidth() / 2,
+				canvas.getHeight() - textY + 2 * TEXT_SIZE, paint);
 		return face;
 	}
 
