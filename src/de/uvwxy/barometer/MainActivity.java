@@ -14,10 +14,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import de.uvwxy.daisy.common.sensors.BarometerReader;
-import de.uvwxy.daisy.common.sensors.SensorReader.SensorResultCallback;
-import de.uvwxy.daisy.helper.BitmapTools;
-import de.uvwxy.daisy.helper.ViewTools;
+import de.uvwxy.helper.BitmapTools;
+import de.uvwxy.helper.IntentTools;
+import de.uvwxy.sensors.BarometerReader;
+import de.uvwxy.sensors.SensorReader.SensorResultCallback;
 
 public class MainActivity extends Activity {
 	protected final static String PREF_ID = "BARO_SETTINGS";
@@ -116,7 +116,7 @@ public class MainActivity extends Activity {
 		baroReader = new BarometerReader(this, 50, cb);
 		readValues();
 
-		if (ViewTools.isFirstLaunch(this, PREF_ID)) {
+		if (IntentTools.isFirstLaunch(this, PREF_ID)) {
 			save = true;
 		}
 	}

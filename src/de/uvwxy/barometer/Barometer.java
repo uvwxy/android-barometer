@@ -2,8 +2,6 @@ package de.uvwxy.barometer;
 
 import java.util.Locale;
 
-import de.uvwxy.daisy.common.sensors.BarometerReader;
-import de.uvwxy.daisy.common.sensors.SensorReader.SensorResultCallback;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,8 +10,7 @@ import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
-import android.hardware.SensorEvent;
-import android.hardware.SensorManager;
+import de.uvwxy.sensors.BarometerReader;
 
 public class Barometer {
 	private static final int TEXT_SIZE = 16;
