@@ -1,32 +1,49 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rlMain"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardRootSV" >
 
-    <ImageView
-        android:id="@+id/ivBaro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tvInfo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:scaleType="centerInside"
-        android:src="@drawable/baro_face" />
+   <LinearLayout style="@style/CardRootLL" >
 
-    <TextView
-        android:id="@+id/tvInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:clickable="true"
-        android:focusable="true"
-        android:gravity="center_horizontal"
-        android:text="@string/help"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#888888" />
+        <LinearLayout style="@style/CardBodyLL" >
 
-</RelativeLayout>
+            <TextView
+                android:text="@string/current"
+                style="@style/CardTitle" />
+
+            <View style="@style/CardHR" />
+
+            <ImageView
+                android:id="@+id/ivBaro"
+                android:layout_above="@+id/tvInfo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/baro_face" />
+        </LinearLayout>
+
+       
+
+        <LinearLayout style="@style/CardBodyLL" >
+
+            <TextView
+                android:text="@string/hint"
+                style="@style/CardTitle" />
+
+            <View style="@style/CardHR" />
+
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/tvInfo"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/help"
+                style="@style/CardText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

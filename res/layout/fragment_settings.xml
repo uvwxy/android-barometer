@@ -1,0 +1,163 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardRootSV" >
+
+    <LinearLayout style="@style/CardRootLL" >
+
+        <LinearLayout style="@style/CardBodyLL" >
+
+            <TextView
+                android:text="@string/settings_units"
+                style="@style/CardTitle" />
+
+            <View style="@style/CardHR" />
+
+            <RadioGroup
+                android:id="@+id/rbgPressure"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" >
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/rbMBar"
+                    android:text="@string/unit_mbar"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbBar"
+                    android:text="@string/unit_bar"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbPa"
+                    android:text="@string/unit_pa"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbAt"
+                    android:text="@string/unit_at"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbAtm"
+                    android:text="@string/unit_atm"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbTorr"
+                    android:text="@string/unit_torr"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbPsi"
+                    android:text="@string/unit_psi"
+                    style="@style/CardTextNormal" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout style="@style/CardBodyLL" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:text="@string/distances"
+                style="@style/CardTitle" />
+
+            <View style="@style/CardHR" />
+
+            <RadioGroup
+                android:id="@+id/rbgLengths"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" >
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/rbMetres"
+                    android:text="@string/unit_metres"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbKilometres"
+                    android:text="@string/unit_km"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbFoot"
+                    android:text="@string/unit_foot"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbMiles"
+                    android:text="@string/unit_miles"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
+                    android:id="@+id/rbYards"
+                    android:text="@string/unit_yards"
+                    style="@style/CardTextNormal" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout style="@style/CardBodyLL" >
+
+            <TextView
+                android:text="@string/calibration"
+                style="@style/CardTitle" />
+
+            <View style="@style/CardHR" />
+
+            <TextView
+                android:id="@+id/tvBaroCurrent"
+                android:text="@string/current_value"
+                style="@style/CardTextNormal" />
+
+            <TextView
+                android:id="@+id/tvBaroCurrentValue"
+                style="@style/CardTextNormal" />
+
+            <TextView
+                android:id="@+id/tvBaroRef"
+                android:text="@string/ref_value"
+                style="@style/CardTextNormal" />
+
+            <EditText
+                android:gravity="right|center_vertical"
+                android:id="@+id/etBaroRefValue"
+                android:inputType="numberDecimal"
+                android:layout_width="fill_parent"
+                style="@style/CardTextNormal" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvBaroDiff"
+                android:text="@string/difference"
+                style="@style/CardTextNormal" />
+
+            <TextView
+                android:id="@+id/tvBaroDiffValue"
+                style="@style/CardTextNormal" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_weight="1"
+                    android:text="@string/save"
+                    style="@style/CardTextNormal" />
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_weight="1"
+                    android:text="@string/reset"
+                    style="@style/CardTextNormal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvConfigInfo"
+                android:text="@string/config_info"
+                style="@style/CardTextNormal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Barometer</string>
-
-    <string name="help">long click to save, tap to refresh, click this text for settings</string>
-
+    <string name="app_name">Barometer HD</string>
+    <string name="help">Tap to refresh, long click to set memory handle/needle.</string>
     <string name="current_value">Current Value:</string>
-
     <string name="ref_value">Reference Value:</string>
-
     <string name="cancel">Cancel</string>
-
     <string name="save">Save</string>
-
     <string name="reset">Reset</string>
-
     <string name="difference">Difference:</string>
-
     <string name="config_info">Note: This configuration only affects this application. It does not calibrate the barometer for other applications.</string>
-
     <string name="click_to_refresh">Click to refresh</string>
-
     <string name="error_reading_reference_value">Error reading reference value!</string>
-
+    <string name="settings_units">Pressure Unit</string>
+    <string name="unit_psi">psi</string>
+    <string name="unit_torr">Torr</string>
+    <string name="unit_atm">atm</string>
+    <string name="unit_at">at</string>
+    <string name="unit_pa">Pa</string>
+    <string name="unit_bar">bar</string>
+    <string name="unit_mbar">mbar</string>
+    <string name="distances">Distance Unit</string>
+    <string name="unit_metres">Metres</string>
+    <string name="unit_km">Kilometres</string>
+    <string name="unit_foot">Foot</string>
+    <string name="unit_miles">Miles</string>
+    <string name="unit_yards">Yards</string>
+    <string name="hint">Hint</string>
+    <string name="current">Current</string>
+    <string name="calibration">Offset Calibration</string>
+    <string name="set">Set</string>
 </resources>

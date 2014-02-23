@@ -13,14 +13,14 @@ import android.graphics.Paint.Align;
 import de.uvwxy.sensors.BarometerReader;
 
 public class Barometer {
-	private static final int TEXT_SIZE = 16;
+	private static final int TEXT_SIZE = 32;
 	private final float degreesPerStep = +30f;
 	private final float millsPerStep = 10f;
 	private final float firstStepDegrees = -135f;
 	private final float degreesPerMilliBar = degreesPerStep / millsPerStep;
 	float[] valuesMillibar = new float[] { 960, 970, 980, 990, 1000, 1010, 1020, 1030, 1040, 1050 };
 
-	private final int textY = 64 + 32;
+	private final int textY = 64 + 128;
 
 	private Bitmap face = null;
 	private Bitmap knob = null;
