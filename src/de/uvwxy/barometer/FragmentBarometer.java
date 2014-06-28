@@ -46,7 +46,7 @@ public class FragmentBarometer extends Fragment {
 			if (f != null && f.length >= 1) {
 				currentValue = f[0];
 				origValue = currentValue;
-				currentValue = MainActivity.dhis.fSettings.getDiffedBaro(ctx, currentValue);
+				currentValue = FragmentSettings.getDiffedBaro(ctx, currentValue);
 
 				// split in if else to avoid values changing after reading
 				if (save) {
@@ -56,7 +56,7 @@ public class FragmentBarometer extends Fragment {
 					Toast.makeText(ctx, "Saved", Toast.LENGTH_SHORT).show();
 				}
 
-				Bitmap temp = baro.drawMillisWithMemory(currentValue, oldValue);
+				Bitmap temp = getUnitsBitmap();
 
 				int w = ivBaro.getWidth();
 				int h = ivBaro.getHeight();
@@ -115,7 +115,6 @@ public class FragmentBarometer extends Fragment {
 
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
-		// TODO Auto-generated method stub
 		super.onConfigurationChanged(newConfig);
 	}
 
@@ -125,7 +124,7 @@ public class FragmentBarometer extends Fragment {
 		int h = ivBaro.getHeight();
 		int l = w <= h ? w : h;
 		if (l != 0) {
-			ivBaro.setImageBitmap(BitmapTools.scaleBitmap(baro.drawUnitsMillibar(), l, l, true));
+			ivBaro.setImageBitmap(BitmapTools.scaleBitmap(getUnitsBitmap(), l, l, true));
 		}
 
 		updateBaro();
@@ -137,7 +136,6 @@ public class FragmentBarometer extends Fragment {
 	}
 
 	private void readValues() {
-
 		SharedPreferences settings = ctx.getSharedPreferences(PREF_ID, 0);
 		oldValue = settings.getFloat(PREF_BARO_OLD, -1);
 	}
@@ -149,8 +147,8 @@ public class FragmentBarometer extends Fragment {
 		editor.commit();
 	}
 
-	public void updateUnits() {
-		// TODO Reload graphics, etc, using units
+	private Bitmap getUnitsBitmap(){
+		return baro.drawUnitsWithMemory(currentValue, oldValue, FragmentSettings.loadPressureUnit(getActivity()), FragmentSettings.loadLengthUnit(getActivity()));
 
 	}
 

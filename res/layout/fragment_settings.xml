@@ -33,6 +33,11 @@
                     style="@style/CardTextNormal" />
 
                 <RadioButton
+                    android:id="@+id/rbHPa"
+                    android:text="@string/unit_hpa"
+                    style="@style/CardTextNormal" />
+
+                <RadioButton
                     android:id="@+id/rbAt"
                     android:text="@string/unit_at"
                     style="@style/CardTextNormal" />

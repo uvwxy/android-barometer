@@ -2,9 +2,10 @@
 <resources>
 
     <string name="app_name">Barometer HD</string>
+    <string name="app_description">Display a barometer using the integrated pressure sensor of your smartphone. Tap to update (also after changing units). Homescreen widget included.</string>
     <string name="help">Tap to refresh, long click to set memory handle/needle.</string>
     <string name="current_value">Current Value:</string>
-    <string name="ref_value">Reference Value:</string>
+    <string name="ref_value">Reference Value (mb!):</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="reset">Reset</string>
@@ -13,21 +14,23 @@
     <string name="click_to_refresh">Click to refresh</string>
     <string name="error_reading_reference_value">Error reading reference value!</string>
     <string name="settings_units">Pressure Unit</string>
-    <string name="unit_psi">psi</string>
-    <string name="unit_torr">Torr</string>
-    <string name="unit_atm">atm</string>
-    <string name="unit_at">at</string>
-    <string name="unit_pa">Pa</string>
-    <string name="unit_bar">bar</string>
-    <string name="unit_mbar">mbar</string>
+    <string name="unit_psi">Pounds per square inch [psi]</string>
+    <string name="unit_torr">Torr [Torr]</string>
+    <string name="unit_atm">Standard atmosphere [atm]</string>
+    <string name="unit_at">Technical atmosphere [at]</string>
+    <string name="unit_pa">Pascal [Pa]</string>
+    <string name="unit_hpa">Hecto Pascal [hPa]</string>
+    <string name="unit_bar">Bar [bar]</string>
+    <string name="unit_mbar">Millibar [mbar]</string>
     <string name="distances">Distance Unit</string>
-    <string name="unit_metres">Metres</string>
-    <string name="unit_km">Kilometres</string>
-    <string name="unit_foot">Foot</string>
-    <string name="unit_miles">Miles</string>
-    <string name="unit_yards">Yards</string>
+    <string name="unit_metres">Metres [m]</string>
+    <string name="unit_km">Kilometres [km]</string>
+    <string name="unit_foot">Foot [ft]</string>
+    <string name="unit_miles">Miles [mi]</string>
+    <string name="unit_yards">Yards [yds]</string>
     <string name="hint">Hint</string>
     <string name="current">Current</string>
     <string name="calibration">Offset Calibration</string>
     <string name="set">Set</string>
+
 </resources>
