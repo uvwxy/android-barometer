@@ -33,6 +33,11 @@ public class MainActivity extends ActivityCardPager {
 		case 2:
 			if (fAbout == null) {
 				fAbout = new FragmentAbout();
+				fAbout.setTitle(getApplication().getText(R.string.app_name).toString());
+                fAbout.setPackageName("de.uvwxy.barometer");
+                fAbout.setMarketUrl("market://search?q=de.uvwxy.barometer&c=apps");
+                fAbout.setAboutApp(getString(R.string.app_description));
+                fAbout.setLicenses(new String[] { "lombok" });
 			}
 			return fAbout;
 
