@@ -1877,21 +1877,18 @@ android.support.v4.widget.ViewDragHelper$Callback -> android.support.v4.widget.a
     int clampViewPositionHorizontal(android.view.View,int,int) -> a
     int clampViewPositionVertical(android.view.View,int,int) -> b
 de.uvwxy.barometer.Barometer -> de.uvwxy.barometer.a:
-    float degreesPerStep -> e
-    float millsPerStep -> f
-    float firstStepDegrees -> g
-    float degreesPerMilliBar -> h
-    float[] valuesMillibar -> a
-    double[][] valuesUnits -> b
-    java.lang.String[] pressureNames -> c
-    java.lang.String[] valuesUnitsDisplay -> d
-    int textY -> i
-    android.graphics.Bitmap face -> j
-    android.graphics.Bitmap knob -> k
-    android.graphics.Bitmap handle -> l
-    android.graphics.Bitmap handle_memory -> m
+    float degreesPerStep -> d
+    float firstStepDegrees -> e
+    double[][] pressureValueSteps -> a
+    java.lang.String[] pressureNames -> b
+    java.lang.String[] pressureValueDisplayFormat -> c
+    int textY -> f
+    android.graphics.Bitmap face -> g
+    android.graphics.Bitmap knob -> h
+    android.graphics.Bitmap handle -> i
+    android.graphics.Bitmap handle_memory -> j
     void loadBitmaps(android.content.Context) -> a
-    float millibarToDegrees(float) -> a
+    float millibarToDegrees(float,int) -> a
     android.graphics.Bitmap drawUnitsWithMemory(float,float,int,int) -> a
     android.graphics.Bitmap drawUnits(int) -> a
 de.uvwxy.barometer.FragmentBarometer -> de.uvwxy.barometer.b:

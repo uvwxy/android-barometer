@@ -66679,30 +66679,18 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 360):
+Constant Pool (count = 341):
   + Integer [192]
   + Integer [2130837504]
   + Integer [2130837505]
   + Integer [2130837506]
   + Integer [2130837507]
-  + Float [-150.0]
   + Float [-135.0]
   + Float [-1.0]
-  + Float [3.0]
-  + Float [10.0]
+  + Float [5.0]
   + Float [30.0]
   + Float [32.0]
   + Float [192.0]
-  + Float [960.0]
-  + Float [970.0]
-  + Float [980.0]
-  + Float [990.0]
-  + Float [1000.0]
-  + Float [1010.0]
-  + Float [1020.0]
-  + Float [1030.0]
-  + Float [1040.0]
-  + Float [1050.0]
   + String [%.0f]
   + String [%.3f]
   + String [%.3f at]
@@ -66788,19 +66776,16 @@ Constant Pool (count = 360):
   + Fieldref [android/graphics/Bitmap$Config.ARGB_8888 Landroid/graphics/Bitmap$Config;]
   + Fieldref [android/graphics/BitmapFactory$Options.inScaled Z]
   + Fieldref [android/graphics/Paint$Align.CENTER Landroid/graphics/Paint$Align;]
-  + Fieldref [de/uvwxy/barometer/a.a [F]
-  + Fieldref [de/uvwxy/barometer/a.b [[D]
+  + Fieldref [de/uvwxy/barometer/a.a [[D]
+  + Fieldref [de/uvwxy/barometer/a.b [Ljava/lang/String;]
   + Fieldref [de/uvwxy/barometer/a.c [Ljava/lang/String;]
-  + Fieldref [de/uvwxy/barometer/a.d [Ljava/lang/String;]
+  + Fieldref [de/uvwxy/barometer/a.d F]
   + Fieldref [de/uvwxy/barometer/a.e F]
-  + Fieldref [de/uvwxy/barometer/a.f F]
-  + Fieldref [de/uvwxy/barometer/a.g F]
-  + Fieldref [de/uvwxy/barometer/a.h F]
-  + Fieldref [de/uvwxy/barometer/a.i I]
+  + Fieldref [de/uvwxy/barometer/a.f I]
+  + Fieldref [de/uvwxy/barometer/a.g Landroid/graphics/Bitmap;]
+  + Fieldref [de/uvwxy/barometer/a.h Landroid/graphics/Bitmap;]
+  + Fieldref [de/uvwxy/barometer/a.i Landroid/graphics/Bitmap;]
   + Fieldref [de/uvwxy/barometer/a.j Landroid/graphics/Bitmap;]
-  + Fieldref [de/uvwxy/barometer/a.k Landroid/graphics/Bitmap;]
-  + Fieldref [de/uvwxy/barometer/a.l Landroid/graphics/Bitmap;]
-  + Fieldref [de/uvwxy/barometer/a.m Landroid/graphics/Bitmap;]
   + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
   + Methodref [android/graphics/Bitmap.createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
   + Methodref [android/graphics/Bitmap.getHeight ()I]
@@ -66821,7 +66806,7 @@ Constant Pool (count = 360):
   + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
   + Methodref [android/graphics/Paint.setTextAlign (Landroid/graphics/Paint$Align;)V]
   + Methodref [android/graphics/Paint.setTextSize (F)V]
-  + Methodref [de/uvwxy/barometer/a.a (F)F]
+  + Methodref [de/uvwxy/barometer/a.a (FI)F]
   + Methodref [de/uvwxy/barometer/a.a (I)Landroid/graphics/Bitmap;]
   + Methodref [de/uvwxy/barometer/f.a (I)Lde/uvwxy/d/c;]
   + Methodref [de/uvwxy/barometer/f.b (I)Lde/uvwxy/d/c;]
@@ -66829,6 +66814,7 @@ Constant Pool (count = 360):
   + Methodref [de/uvwxy/d/c.a (D)Lde/uvwxy/d/c;]
   + Methodref [de/uvwxy/d/c.a (Lde/uvwxy/d/c;)Lde/uvwxy/d/c;]
   + Methodref [de/uvwxy/d/c.a (Ljava/lang/String;)Lde/uvwxy/d/c;]
+  + Methodref [de/uvwxy/d/c.b ()D]
   + Methodref [de/uvwxy/d/c.toString ()Ljava/lang/String;]
   + Methodref [java/lang/Double.valueOf (D)Ljava/lang/Double;]
   + Methodref [java/lang/Object.<init> ()V]
@@ -66843,37 +66829,35 @@ Constant Pool (count = 360):
   + NameAndType [ARGB_8888 Landroid/graphics/Bitmap$Config;]
   + NameAndType [CENTER Landroid/graphics/Paint$Align;]
   + NameAndType [a (D)Lde/uvwxy/d/c;]
-  + NameAndType [a (F)F]
+  + NameAndType [a (FI)F]
   + NameAndType [a (I)Landroid/graphics/Bitmap;]
   + NameAndType [a (I)Lde/uvwxy/d/c;]
   + NameAndType [a (Lde/uvwxy/d/c;)Lde/uvwxy/d/c;]
   + NameAndType [a (Ljava/lang/String;)Lde/uvwxy/d/c;]
-  + NameAndType [a [F]
+  + NameAndType [a [[D]
   + NameAndType [append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
   + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()D]
   + NameAndType [b (FF)F]
   + NameAndType [b (I)Lde/uvwxy/d/c;]
-  + NameAndType [b [[D]
+  + NameAndType [b [Ljava/lang/String;]
   + NameAndType [c [Ljava/lang/String;]
   + NameAndType [createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
-  + NameAndType [d [Ljava/lang/String;]
+  + NameAndType [d F]
   + NameAndType [decodeResource (Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
   + NameAndType [drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V]
   + NameAndType [drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
   + NameAndType [e F]
-  + NameAndType [f F]
+  + NameAndType [f I]
   + NameAndType [format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
-  + NameAndType [g F]
+  + NameAndType [g Landroid/graphics/Bitmap;]
   + NameAndType [getHeight ()I]
   + NameAndType [getResources ()Landroid/content/res/Resources;]
   + NameAndType [getWidth ()I]
-  + NameAndType [h F]
-  + NameAndType [i I]
+  + NameAndType [h Landroid/graphics/Bitmap;]
+  + NameAndType [i Landroid/graphics/Bitmap;]
   + NameAndType [inScaled Z]
   + NameAndType [j Landroid/graphics/Bitmap;]
-  + NameAndType [k Landroid/graphics/Bitmap;]
-  + NameAndType [l Landroid/graphics/Bitmap;]
-  + NameAndType [m Landroid/graphics/Bitmap;]
   + NameAndType [restore ()V]
   + NameAndType [rotate (FFF)V]
   + NameAndType [save ()I]
@@ -66893,17 +66877,18 @@ Constant Pool (count = 360):
   + Utf8 [%d Torr]
   + Utf8 [%d hPa]
   + Utf8 [%d mb]
+  + Utf8 [()D]
   + Utf8 [()I]
   + Utf8 [()Landroid/content/res/Resources;]
   + Utf8 [()Ljava/lang/String;]
   + Utf8 [()V]
   + Utf8 [(D)Lde/uvwxy/d/c;]
   + Utf8 [(D)Ljava/lang/Double;]
-  + Utf8 [(F)F]
   + Utf8 [(F)V]
   + Utf8 [(FF)F]
   + Utf8 [(FFF)V]
   + Utf8 [(FFII)Landroid/graphics/Bitmap;]
+  + Utf8 [(FI)F]
   + Utf8 [(I)Landroid/graphics/Bitmap;]
   + Utf8 [(I)Lde/uvwxy/d/c;]
   + Utf8 [(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
@@ -66936,7 +66921,6 @@ Constant Pool (count = 360):
   + Utf8 [Z]
   + Utf8 [[]
   + Utf8 [[D]
-  + Utf8 [[F]
   + Utf8 [[Ljava/lang/String;]
   + Utf8 [[[D]
   + Utf8 []]
@@ -66977,9 +66961,6 @@ Constant Pool (count = 360):
   + Utf8 [java/lang/Object]
   + Utf8 [java/lang/String]
   + Utf8 [java/lang/StringBuilder]
-  + Utf8 [k]
-  + Utf8 [l]
-  + Utf8 [m]
   + Utf8 [restore]
   + Utf8 [rotate]
   + Utf8 [save]
@@ -66990,702 +66971,622 @@ Constant Pool (count = 360):
   + Utf8 [toString]
   + Utf8 [valueOf]
 
-Fields (count = 13):
+Fields (count = 10):
+  + Field:        d F
+    Access flags: 0x12
+      = private final float d
+    Class member attributes (count = 1):
+    + Constant value attribute:
+    + Float [30.0]
   + Field:        e F
     Access flags: 0x12
       = private final float e
     Class member attributes (count = 1):
     + Constant value attribute:
-    + Float [30.0]
-  + Field:        f F
-    Access flags: 0x12
-      = private final float f
-    Class member attributes (count = 1):
-    + Constant value attribute:
-    + Float [10.0]
-  + Field:        g F
-    Access flags: 0x12
-      = private final float g
-    Class member attributes (count = 1):
-    + Constant value attribute:
     + Float [-135.0]
-  + Field:        h F
-    Access flags: 0x12
-      = private final float h
-    Class member attributes (count = 1):
-    + Constant value attribute:
-    + Float [3.0]
-  + Field:        a [F
+  + Field:        a [[D
     Access flags: 0x0
-      = float[] a
-  + Field:        b [[D
+      = double[][] a
+  + Field:        b [Ljava/lang/String;
     Access flags: 0x0
-      = double[][] b
+      = java.lang.String[] b
   + Field:        c [Ljava/lang/String;
     Access flags: 0x0
       = java.lang.String[] c
-  + Field:        d [Ljava/lang/String;
-    Access flags: 0x0
-      = java.lang.String[] d
-  + Field:        i I
+  + Field:        f I
     Access flags: 0x12
-      = private final int i
+      = private final int f
     Class member attributes (count = 1):
     + Constant value attribute:
     + Integer [192]
+  + Field:        g Landroid/graphics/Bitmap;
+    Access flags: 0x2
+      = private android.graphics.Bitmap g
+  + Field:        h Landroid/graphics/Bitmap;
+    Access flags: 0x2
+      = private android.graphics.Bitmap h
+  + Field:        i Landroid/graphics/Bitmap;
+    Access flags: 0x2
+      = private android.graphics.Bitmap i
   + Field:        j Landroid/graphics/Bitmap;
     Access flags: 0x2
       = private android.graphics.Bitmap j
-  + Field:        k Landroid/graphics/Bitmap;
-    Access flags: 0x2
-      = private android.graphics.Bitmap k
-  + Field:        l Landroid/graphics/Bitmap;
-    Access flags: 0x2
-      = private android.graphics.Bitmap l
-  + Field:        m Landroid/graphics/Bitmap;
-    Access flags: 0x2
-      = private android.graphics.Bitmap m
 
 Methods (count = 5):
   - Method:       <init>()V
     Access flags: 0x1
       = public a()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 793, locals = 1, stack = 9):
+    + Code attribute instructions (code length = 719, locals = 1, stack = 9):
       [0] aload_0 v0
-      [1] invokespecial #202
+      [1] invokespecial #188
         + Methodref [java/lang/Object.<init> ()V]
       [4] aload_0 v0
-      [5] ldc #11
+      [5] ldc #9
         + Float [30.0]
-      [7] putfield #163
-        + Fieldref [de/uvwxy/barometer/a.e F]
+      [7] putfield #150
+        + Fieldref [de/uvwxy/barometer/a.d F]
       [10] aload_0 v0
-      [11] ldc #10
-        + Float [10.0]
-      [13] putfield #164
-        + Fieldref [de/uvwxy/barometer/a.f F]
-      [16] aload_0 v0
-      [17] ldc #7
+      [11] ldc #6
         + Float [-135.0]
-      [19] putfield #165
-        + Fieldref [de/uvwxy/barometer/a.g F]
-      [22] aload_0 v0
-      [23] ldc #9
-        + Float [3.0]
-      [25] putfield #166
-        + Fieldref [de/uvwxy/barometer/a.h F]
-      [28] aload_0 v0
-      [29] bipush 10
-      [31] newarray 6
-      [33] dup
-      [34] iconst_0
-      [35] ldc #14
-        + Float [960.0]
-      [37] fastore
-      [38] dup
-      [39] iconst_1
-      [40] ldc #15
-        + Float [970.0]
-      [42] fastore
-      [43] dup
-      [44] iconst_2
-      [45] ldc #16
-        + Float [980.0]
-      [47] fastore
-      [48] dup
-      [49] iconst_3
-      [50] ldc #17
-        + Float [990.0]
-      [52] fastore
-      [53] dup
-      [54] iconst_4
-      [55] ldc #18
-        + Float [1000.0]
-      [57] fastore
+      [13] putfield #151
+        + Fieldref [de/uvwxy/barometer/a.e F]
+      [16] aload_0 v0
+      [17] bipush 8
+      [19] anewarray #26
+        + Class [[D]
+      [22] dup
+      [23] iconst_0
+      [24] bipush 10
+      [26] newarray 7
+      [28] dup
+      [29] iconst_0
+      [30] ldc2_w #104
+        + Double [860.0]
+      [33] dastore
+      [34] dup
+      [35] iconst_1
+      [36] ldc2_w #106
+        + Double [880.0]
+      [39] dastore
+      [40] dup
+      [41] iconst_2
+      [42] ldc2_w #108
+        + Double [900.0]
+      [45] dastore
+      [46] dup
+      [47] iconst_3
+      [48] ldc2_w #110
+        + Double [920.0]
+      [51] dastore
+      [52] dup
+      [53] iconst_4
+      [54] ldc2_w #112
+        + Double [940.0]
+      [57] dastore
       [58] dup
       [59] iconst_5
-      [60] ldc #19
-        + Float [1010.0]
-      [62] fastore
-      [63] dup
-      [64] bipush 6
-      [66] ldc #20
-        + Float [1020.0]
-      [68] fastore
-      [69] dup
-      [70] bipush 7
-      [72] ldc #21
-        + Float [1030.0]
-      [74] fastore
-      [75] dup
-      [76] bipush 8
-      [78] ldc #22
-        + Float [1040.0]
-      [80] fastore
-      [81] dup
-      [82] bipush 9
-      [84] ldc #23
-        + Float [1050.0]
-      [86] fastore
-      [87] putfield #159
-        + Fieldref [de/uvwxy/barometer/a.a [F]
-      [90] aload_0 v0
-      [91] bipush 8
-      [93] anewarray #38
-        + Class [[D]
-      [96] dup
-      [97] iconst_0
-      [98] bipush 10
-      [100] newarray 7
-      [102] dup
-      [103] iconst_0
-      [104] ldc2_w #116
-        + Double [860.0]
-      [107] dastore
-      [108] dup
-      [109] iconst_1
-      [110] ldc2_w #118
-        + Double [880.0]
-      [113] dastore
-      [114] dup
-      [115] iconst_2
-      [116] ldc2_w #120
-        + Double [900.0]
-      [119] dastore
-      [120] dup
-      [121] iconst_3
-      [122] ldc2_w #122
-        + Double [920.0]
-      [125] dastore
-      [126] dup
-      [127] iconst_4
-      [128] ldc2_w #124
-        + Double [940.0]
-      [131] dastore
-      [132] dup
-      [133] iconst_5
-      [134] ldc2_w #126
+      [60] ldc2_w #114
         + Double [960.0]
-      [137] dastore
-      [138] dup
-      [139] bipush 6
-      [141] ldc2_w #128
+      [63] dastore
+      [64] dup
+      [65] bipush 6
+      [67] ldc2_w #116
         + Double [980.0]
-      [144] dastore
-      [145] dup
-      [146] bipush 7
-      [148] ldc2_w #130
+      [70] dastore
+      [71] dup
+      [72] bipush 7
+      [74] ldc2_w #118
         + Double [1000.0]
-      [151] dastore
-      [152] dup
-      [153] bipush 8
-      [155] ldc2_w #132
+      [77] dastore
+      [78] dup
+      [79] bipush 8
+      [81] ldc2_w #120
         + Double [1020.0]
-      [158] dastore
-      [159] dup
-      [160] bipush 9
-      [162] ldc2_w #134
+      [84] dastore
+      [85] dup
+      [86] bipush 9
+      [88] ldc2_w #122
         + Double [1040.0]
-      [165] dastore
-      [166] aastore
-      [167] dup
-      [168] iconst_1
-      [169] bipush 10
-      [171] newarray 7
-      [173] dup
-      [174] iconst_0
-      [175] ldc2_w #58
+      [91] dastore
+      [92] aastore
+      [93] dup
+      [94] iconst_1
+      [95] bipush 10
+      [97] newarray 7
+      [99] dup
+      [100] iconst_0
+      [101] ldc2_w #46
         + Double [0.86]
-      [178] dastore
-      [179] dup
-      [180] iconst_1
-      [181] ldc2_w #60
+      [104] dastore
+      [105] dup
+      [106] iconst_1
+      [107] ldc2_w #48
         + Double [0.88]
-      [184] dastore
-      [185] dup
-      [186] iconst_2
-      [187] ldc2_w #62
+      [110] dastore
+      [111] dup
+      [112] iconst_2
+      [113] ldc2_w #50
         + Double [0.9]
-      [190] dastore
-      [191] dup
-      [192] iconst_3
-      [193] ldc2_w #64
+      [116] dastore
+      [117] dup
+      [118] iconst_3
+      [119] ldc2_w #52
         + Double [0.92]
-      [196] dastore
-      [197] dup
-      [198] iconst_4
-      [199] ldc2_w #66
+      [122] dastore
+      [123] dup
+      [124] iconst_4
+      [125] ldc2_w #54
         + Double [0.94]
-      [202] dastore
-      [203] dup
-      [204] iconst_5
-      [205] ldc2_w #68
+      [128] dastore
+      [129] dup
+      [130] iconst_5
+      [131] ldc2_w #56
         + Double [0.96]
-      [208] dastore
-      [209] dup
-      [210] bipush 6
-      [212] ldc2_w #70
+      [134] dastore
+      [135] dup
+      [136] bipush 6
+      [138] ldc2_w #58
         + Double [0.98]
-      [215] dastore
-      [216] dup
-      [217] bipush 7
-      [219] dconst_1
-      [220] dastore
-      [221] dup
-      [222] bipush 8
-      [224] ldc2_w #72
+      [141] dastore
+      [142] dup
+      [143] bipush 7
+      [145] dconst_1
+      [146] dastore
+      [147] dup
+      [148] bipush 8
+      [150] ldc2_w #60
         + Double [1.02]
-      [227] dastore
-      [228] dup
-      [229] bipush 9
-      [231] ldc2_w #74
+      [153] dastore
+      [154] dup
+      [155] bipush 9
+      [157] ldc2_w #62
         + Double [1.04]
-      [234] dastore
-      [235] aastore
-      [236] dup
-      [237] iconst_2
-      [238] bipush 10
-      [240] newarray 7
-      [242] dup
-      [243] iconst_0
-      [244] ldc2_w #136
+      [160] dastore
+      [161] aastore
+      [162] dup
+      [163] iconst_2
+      [164] bipush 10
+      [166] newarray 7
+      [168] dup
+      [169] iconst_0
+      [170] ldc2_w #124
         + Double [86000.0]
-      [247] dastore
-      [248] dup
-      [249] iconst_1
-      [250] ldc2_w #138
+      [173] dastore
+      [174] dup
+      [175] iconst_1
+      [176] ldc2_w #126
         + Double [88000.0]
-      [253] dastore
-      [254] dup
-      [255] iconst_2
-      [256] ldc2_w #140
+      [179] dastore
+      [180] dup
+      [181] iconst_2
+      [182] ldc2_w #128
         + Double [90000.0]
-      [259] dastore
-      [260] dup
-      [261] iconst_3
-      [262] ldc2_w #142
+      [185] dastore
+      [186] dup
+      [187] iconst_3
+      [188] ldc2_w #130
         + Double [92000.0]
-      [265] dastore
-      [266] dup
-      [267] iconst_4
-      [268] ldc2_w #144
+      [191] dastore
+      [192] dup
+      [193] iconst_4
+      [194] ldc2_w #132
         + Double [94000.0]
-      [271] dastore
-      [272] dup
-      [273] iconst_5
-      [274] ldc2_w #146
+      [197] dastore
+      [198] dup
+      [199] iconst_5
+      [200] ldc2_w #134
         + Double [96000.0]
-      [277] dastore
-      [278] dup
-      [279] bipush 6
-      [281] ldc2_w #148
+      [203] dastore
+      [204] dup
+      [205] bipush 6
+      [207] ldc2_w #136
         + Double [98000.0]
-      [284] dastore
-      [285] dup
-      [286] bipush 7
-      [288] ldc2_w #150
+      [210] dastore
+      [211] dup
+      [212] bipush 7
+      [214] ldc2_w #138
         + Double [100000.0]
-      [291] dastore
-      [292] dup
-      [293] bipush 8
-      [295] ldc2_w #152
+      [217] dastore
+      [218] dup
+      [219] bipush 8
+      [221] ldc2_w #140
         + Double [102000.0]
-      [298] dastore
-      [299] dup
-      [300] bipush 9
-      [302] ldc2_w #154
+      [224] dastore
+      [225] dup
+      [226] bipush 9
+      [228] ldc2_w #142
         + Double [104000.0]
-      [305] dastore
-      [306] aastore
-      [307] dup
-      [308] iconst_3
-      [309] bipush 10
-      [311] newarray 7
-      [313] dup
-      [314] iconst_0
-      [315] ldc2_w #96
-        + Double [600.0]
-      [318] dastore
-      [319] dup
-      [320] iconst_1
-      [321] ldc2_w #98
-        + Double [620.0]
-      [324] dastore
-      [325] dup
-      [326] iconst_2
-      [327] ldc2_w #100
-        + Double [640.0]
-      [330] dastore
-      [331] dup
-      [332] iconst_3
-      [333] ldc2_w #102
-        + Double [660.0]
-      [336] dastore
-      [337] dup
-      [338] iconst_4
-      [339] ldc2_w #104
-        + Double [680.0]
-      [342] dastore
-      [343] dup
-      [344] iconst_5
-      [345] ldc2_w #106
-        + Double [700.0]
-      [348] dastore
-      [349] dup
-      [350] bipush 6
-      [352] ldc2_w #108
-        + Double [720.0]
-      [355] dastore
-      [356] dup
-      [357] bipush 7
-      [359] ldc2_w #110
-        + Double [740.0]
-      [362] dastore
-      [363] dup
-      [364] bipush 8
-      [366] ldc2_w #112
-        + Double [760.0]
-      [369] dastore
-      [370] dup
-      [371] bipush 9
-      [373] ldc2_w #114
-        + Double [780.0]
-      [376] dastore
-      [377] aastore
-      [378] dup
-      [379] iconst_4
-      [380] bipush 10
-      [382] newarray 7
-      [384] dup
-      [385] iconst_0
-      [386] ldc2_w #58
-        + Double [0.86]
-      [389] dastore
-      [390] dup
-      [391] iconst_1
-      [392] ldc2_w #60
-        + Double [0.88]
-      [395] dastore
-      [396] dup
-      [397] iconst_2
-      [398] ldc2_w #62
-        + Double [0.9]
-      [401] dastore
-      [402] dup
-      [403] iconst_3
-      [404] ldc2_w #64
-        + Double [0.92]
-      [407] dastore
-      [408] dup
-      [409] iconst_4
-      [410] ldc2_w #66
-        + Double [0.94]
-      [413] dastore
-      [414] dup
-      [415] iconst_5
-      [416] ldc2_w #68
-        + Double [0.96]
-      [419] dastore
-      [420] dup
-      [421] bipush 6
-      [423] ldc2_w #70
-        + Double [0.98]
-      [426] dastore
-      [427] dup
-      [428] bipush 7
-      [430] dconst_1
-      [431] dastore
-      [432] dup
-      [433] bipush 8
-      [435] ldc2_w #72
-        + Double [1.02]
-      [438] dastore
-      [439] dup
-      [440] bipush 9
-      [442] ldc2_w #74
-        + Double [1.04]
-      [445] dastore
-      [446] aastore
-      [447] dup
-      [448] iconst_5
-      [449] bipush 10
-      [451] newarray 7
-      [453] dup
-      [454] iconst_0
-      [455] ldc2_w #56
-        + Double [0.84]
-      [458] dastore
-      [459] dup
-      [460] iconst_1
-      [461] ldc2_w #58
-        + Double [0.86]
-      [464] dastore
-      [465] dup
-      [466] iconst_2
-      [467] ldc2_w #60
-        + Double [0.88]
-      [470] dastore
-      [471] dup
-      [472] iconst_3
-      [473] ldc2_w #62
-        + Double [0.9]
-      [476] dastore
-      [477] dup
-      [478] iconst_4
-      [479] ldc2_w #64
-        + Double [0.92]
-      [482] dastore
-      [483] dup
-      [484] iconst_5
-      [485] ldc2_w #66
-        + Double [0.94]
-      [488] dastore
-      [489] dup
-      [490] bipush 6
-      [492] ldc2_w #68
-        + Double [0.96]
-      [495] dastore
-      [496] dup
-      [497] bipush 7
-      [499] ldc2_w #70
-        + Double [0.98]
-      [502] dastore
-      [503] dup
-      [504] bipush 8
-      [506] dconst_1
-      [507] dastore
-      [508] dup
-      [509] bipush 9
-      [511] ldc2_w #72
-        + Double [1.02]
-      [514] dastore
-      [515] aastore
-      [516] dup
-      [517] bipush 6
-      [519] bipush 10
-      [521] newarray 7
-      [523] dup
-      [524] iconst_0
-      [525] ldc2_w #116
+      [231] dastore
+      [232] aastore
+      [233] dup
+      [234] iconst_3
+      [235] bipush 10
+      [237] newarray 7
+      [239] dup
+      [240] iconst_0
+      [241] ldc2_w #104
         + Double [860.0]
-      [528] dastore
-      [529] dup
-      [530] iconst_1
-      [531] ldc2_w #118
+      [244] dastore
+      [245] dup
+      [246] iconst_1
+      [247] ldc2_w #106
         + Double [880.0]
-      [534] dastore
-      [535] dup
-      [536] iconst_2
-      [537] ldc2_w #120
+      [250] dastore
+      [251] dup
+      [252] iconst_2
+      [253] ldc2_w #108
         + Double [900.0]
-      [540] dastore
-      [541] dup
-      [542] iconst_3
-      [543] ldc2_w #122
+      [256] dastore
+      [257] dup
+      [258] iconst_3
+      [259] ldc2_w #110
         + Double [920.0]
-      [546] dastore
-      [547] dup
-      [548] iconst_4
-      [549] ldc2_w #124
+      [262] dastore
+      [263] dup
+      [264] iconst_4
+      [265] ldc2_w #112
         + Double [940.0]
-      [552] dastore
-      [553] dup
-      [554] iconst_5
-      [555] ldc2_w #126
+      [268] dastore
+      [269] dup
+      [270] iconst_5
+      [271] ldc2_w #114
         + Double [960.0]
-      [558] dastore
-      [559] dup
-      [560] bipush 6
-      [562] ldc2_w #128
+      [274] dastore
+      [275] dup
+      [276] bipush 6
+      [278] ldc2_w #116
         + Double [980.0]
-      [565] dastore
-      [566] dup
-      [567] bipush 7
-      [569] ldc2_w #130
+      [281] dastore
+      [282] dup
+      [283] bipush 7
+      [285] ldc2_w #118
         + Double [1000.0]
-      [572] dastore
-      [573] dup
-      [574] bipush 8
-      [576] ldc2_w #132
+      [288] dastore
+      [289] dup
+      [290] bipush 8
+      [292] ldc2_w #120
         + Double [1020.0]
-      [579] dastore
-      [580] dup
-      [581] bipush 9
-      [583] ldc2_w #134
+      [295] dastore
+      [296] dup
+      [297] bipush 9
+      [299] ldc2_w #122
         + Double [1040.0]
-      [586] dastore
-      [587] aastore
-      [588] dup
-      [589] bipush 7
-      [591] bipush 10
-      [593] newarray 7
+      [302] dastore
+      [303] aastore
+      [304] dup
+      [305] iconst_4
+      [306] bipush 10
+      [308] newarray 7
+      [310] dup
+      [311] iconst_0
+      [312] ldc2_w #46
+        + Double [0.86]
+      [315] dastore
+      [316] dup
+      [317] iconst_1
+      [318] ldc2_w #48
+        + Double [0.88]
+      [321] dastore
+      [322] dup
+      [323] iconst_2
+      [324] ldc2_w #50
+        + Double [0.9]
+      [327] dastore
+      [328] dup
+      [329] iconst_3
+      [330] ldc2_w #52
+        + Double [0.92]
+      [333] dastore
+      [334] dup
+      [335] iconst_4
+      [336] ldc2_w #54
+        + Double [0.94]
+      [339] dastore
+      [340] dup
+      [341] iconst_5
+      [342] ldc2_w #56
+        + Double [0.96]
+      [345] dastore
+      [346] dup
+      [347] bipush 6
+      [349] ldc2_w #58
+        + Double [0.98]
+      [352] dastore
+      [353] dup
+      [354] bipush 7
+      [356] dconst_1
+      [357] dastore
+      [358] dup
+      [359] bipush 8
+      [361] ldc2_w #60
+        + Double [1.02]
+      [364] dastore
+      [365] dup
+      [366] bipush 9
+      [368] ldc2_w #62
+        + Double [1.04]
+      [371] dastore
+      [372] aastore
+      [373] dup
+      [374] iconst_5
+      [375] bipush 10
+      [377] newarray 7
+      [379] dup
+      [380] iconst_0
+      [381] ldc2_w #44
+        + Double [0.84]
+      [384] dastore
+      [385] dup
+      [386] iconst_1
+      [387] ldc2_w #46
+        + Double [0.86]
+      [390] dastore
+      [391] dup
+      [392] iconst_2
+      [393] ldc2_w #48
+        + Double [0.88]
+      [396] dastore
+      [397] dup
+      [398] iconst_3
+      [399] ldc2_w #50
+        + Double [0.9]
+      [402] dastore
+      [403] dup
+      [404] iconst_4
+      [405] ldc2_w #52
+        + Double [0.92]
+      [408] dastore
+      [409] dup
+      [410] iconst_5
+      [411] ldc2_w #54
+        + Double [0.94]
+      [414] dastore
+      [415] dup
+      [416] bipush 6
+      [418] ldc2_w #56
+        + Double [0.96]
+      [421] dastore
+      [422] dup
+      [423] bipush 7
+      [425] ldc2_w #58
+        + Double [0.98]
+      [428] dastore
+      [429] dup
+      [430] bipush 8
+      [432] dconst_1
+      [433] dastore
+      [434] dup
+      [435] bipush 9
+      [437] ldc2_w #60
+        + Double [1.02]
+      [440] dastore
+      [441] aastore
+      [442] dup
+      [443] bipush 6
+      [445] bipush 10
+      [447] newarray 7
+      [449] dup
+      [450] iconst_0
+      [451] ldc2_w #84
+        + Double [600.0]
+      [454] dastore
+      [455] dup
+      [456] iconst_1
+      [457] ldc2_w #86
+        + Double [620.0]
+      [460] dastore
+      [461] dup
+      [462] iconst_2
+      [463] ldc2_w #88
+        + Double [640.0]
+      [466] dastore
+      [467] dup
+      [468] iconst_3
+      [469] ldc2_w #90
+        + Double [660.0]
+      [472] dastore
+      [473] dup
+      [474] iconst_4
+      [475] ldc2_w #92
+        + Double [680.0]
+      [478] dastore
+      [479] dup
+      [480] iconst_5
+      [481] ldc2_w #94
+        + Double [700.0]
+      [484] dastore
+      [485] dup
+      [486] bipush 6
+      [488] ldc2_w #96
+        + Double [720.0]
+      [491] dastore
+      [492] dup
+      [493] bipush 7
+      [495] ldc2_w #98
+        + Double [740.0]
+      [498] dastore
+      [499] dup
+      [500] bipush 8
+      [502] ldc2_w #100
+        + Double [760.0]
+      [505] dastore
+      [506] dup
+      [507] bipush 9
+      [509] ldc2_w #102
+        + Double [780.0]
+      [512] dastore
+      [513] aastore
+      [514] dup
+      [515] bipush 7
+      [517] bipush 10
+      [519] newarray 7
+      [521] dup
+      [522] iconst_0
+      [523] ldc2_w #64
+        + Double [12.47324547]
+      [526] dastore
+      [527] dup
+      [528] iconst_1
+      [529] ldc2_w #66
+        + Double [12.76332094]
+      [532] dastore
+      [533] dup
+      [534] iconst_2
+      [535] ldc2_w #68
+        + Double [13.05339642]
+      [538] dastore
+      [539] dup
+      [540] iconst_3
+      [541] ldc2_w #70
+        + Double [13.3434719]
+      [544] dastore
+      [545] dup
+      [546] iconst_4
+      [547] ldc2_w #72
+        + Double [13.63354737]
+      [550] dastore
+      [551] dup
+      [552] iconst_5
+      [553] ldc2_w #74
+        + Double [13.92362285]
+      [556] dastore
+      [557] dup
+      [558] bipush 6
+      [560] ldc2_w #76
+        + Double [14.21369832]
+      [563] dastore
+      [564] dup
+      [565] bipush 7
+      [567] ldc2_w #78
+        + Double [14.5037738]
+      [570] dastore
+      [571] dup
+      [572] bipush 8
+      [574] ldc2_w #80
+        + Double [14.79384928]
+      [577] dastore
+      [578] dup
+      [579] bipush 9
+      [581] ldc2_w #82
+        + Double [15.08392475]
+      [584] dastore
+      [585] aastore
+      [586] putfield #147
+        + Fieldref [de/uvwxy/barometer/a.a [[D]
+      [589] aload_0 v0
+      [590] bipush 8
+      [592] anewarray #42
+        + Class [java/lang/String]
       [595] dup
       [596] iconst_0
-      [597] ldc2_w #76
-        + Double [12.47324547]
-      [600] dastore
-      [601] dup
-      [602] iconst_1
-      [603] ldc2_w #78
-        + Double [12.76332094]
-      [606] dastore
-      [607] dup
-      [608] iconst_2
-      [609] ldc2_w #80
-        + Double [13.05339642]
-      [612] dastore
-      [613] dup
-      [614] iconst_3
-      [615] ldc2_w #82
-        + Double [13.3434719]
-      [618] dastore
-      [619] dup
-      [620] iconst_4
-      [621] ldc2_w #84
-        + Double [13.63354737]
-      [624] dastore
-      [625] dup
-      [626] iconst_5
-      [627] ldc2_w #86
-        + Double [13.92362285]
-      [630] dastore
-      [631] dup
-      [632] bipush 6
-      [634] ldc2_w #88
-        + Double [14.21369832]
-      [637] dastore
-      [638] dup
-      [639] bipush 7
-      [641] ldc2_w #90
-        + Double [14.5037738]
-      [644] dastore
-      [645] dup
-      [646] bipush 8
-      [648] ldc2_w #92
-        + Double [14.79384928]
-      [651] dastore
-      [652] dup
-      [653] bipush 9
-      [655] ldc2_w #94
-        + Double [15.08392475]
-      [658] dastore
-      [659] aastore
-      [660] putfield #160
-        + Fieldref [de/uvwxy/barometer/a.b [[D]
-      [663] aload_0 v0
-      [664] bipush 8
-      [666] anewarray #54
-        + Class [java/lang/String]
-      [669] dup
-      [670] iconst_0
-      [671] ldc #33
+      [597] ldc #21
         + String [%d mb]
-      [673] aastore
-      [674] dup
-      [675] iconst_1
-      [676] ldc #28
+      [599] aastore
+      [600] dup
+      [601] iconst_1
+      [602] ldc #16
         + String [%.3f bar]
-      [678] aastore
-      [679] dup
-      [680] iconst_2
-      [681] ldc #30
+      [604] aastore
+      [605] dup
+      [606] iconst_2
+      [607] ldc #18
         + String [%d Pa]
-      [683] aastore
-      [684] dup
-      [685] iconst_3
-      [686] ldc #32
+      [609] aastore
+      [610] dup
+      [611] iconst_3
+      [612] ldc #20
         + String [%d hPa]
-      [688] aastore
-      [689] dup
-      [690] iconst_4
-      [691] ldc #26
+      [614] aastore
+      [615] dup
+      [616] iconst_4
+      [617] ldc #14
         + String [%.3f at]
-      [693] aastore
-      [694] dup
-      [695] iconst_5
-      [696] ldc #27
+      [619] aastore
+      [620] dup
+      [621] iconst_5
+      [622] ldc #15
         + String [%.3f atm]
-      [698] aastore
-      [699] dup
-      [700] bipush 6
-      [702] ldc #31
+      [624] aastore
+      [625] dup
+      [626] bipush 6
+      [628] ldc #19
         + String [%d Torr]
-      [704] aastore
-      [705] dup
-      [706] bipush 7
-      [708] ldc #29
+      [630] aastore
+      [631] dup
+      [632] bipush 7
+      [634] ldc #17
         + String [%.3f psi]
-      [710] aastore
-      [711] putfield #161
-        + Fieldref [de/uvwxy/barometer/a.c [Ljava/lang/String;]
-      [714] aload_0 v0
-      [715] bipush 8
-      [717] anewarray #54
+      [636] aastore
+      [637] putfield #148
+        + Fieldref [de/uvwxy/barometer/a.b [Ljava/lang/String;]
+      [640] aload_0 v0
+      [641] bipush 8
+      [643] anewarray #42
         + Class [java/lang/String]
-      [720] dup
-      [721] iconst_0
-      [722] ldc #24
+      [646] dup
+      [647] iconst_0
+      [648] ldc #12
         + String [%.0f]
-      [724] aastore
-      [725] dup
-      [726] iconst_1
-      [727] ldc #25
+      [650] aastore
+      [651] dup
+      [652] iconst_1
+      [653] ldc #13
         + String [%.3f]
-      [729] aastore
-      [730] dup
-      [731] iconst_2
-      [732] ldc #24
+      [655] aastore
+      [656] dup
+      [657] iconst_2
+      [658] ldc #12
         + String [%.0f]
-      [734] aastore
-      [735] dup
-      [736] iconst_3
-      [737] ldc #24
+      [660] aastore
+      [661] dup
+      [662] iconst_3
+      [663] ldc #12
         + String [%.0f]
-      [739] aastore
-      [740] dup
-      [741] iconst_4
-      [742] ldc #25
+      [665] aastore
+      [666] dup
+      [667] iconst_4
+      [668] ldc #13
         + String [%.3f]
-      [744] aastore
-      [745] dup
-      [746] iconst_5
-      [747] ldc #25
+      [670] aastore
+      [671] dup
+      [672] iconst_5
+      [673] ldc #13
         + String [%.3f]
-      [749] aastore
-      [750] dup
-      [751] bipush 6
-      [753] ldc #24
+      [675] aastore
+      [676] dup
+      [677] bipush 6
+      [679] ldc #12
         + String [%.0f]
-      [755] aastore
-      [756] dup
-      [757] bipush 7
-      [759] ldc #25
+      [681] aastore
+      [682] dup
+      [683] bipush 7
+      [685] ldc #13
         + String [%.3f]
-      [761] aastore
-      [762] putfield #162
-        + Fieldref [de/uvwxy/barometer/a.d [Ljava/lang/String;]
-      [765] aload_0 v0
-      [766] sipush 192
-      [769] putfield #167
-        + Fieldref [de/uvwxy/barometer/a.i I]
-      [772] aload_0 v0
-      [773] aconst_null
-      [774] putfield #168
+      [687] aastore
+      [688] putfield #149
+        + Fieldref [de/uvwxy/barometer/a.c [Ljava/lang/String;]
+      [691] aload_0 v0
+      [692] sipush 192
+      [695] putfield #152
+        + Fieldref [de/uvwxy/barometer/a.f I]
+      [698] aload_0 v0
+      [699] aconst_null
+      [700] putfield #153
+        + Fieldref [de/uvwxy/barometer/a.g Landroid/graphics/Bitmap;]
+      [703] aload_0 v0
+      [704] aconst_null
+      [705] putfield #154
+        + Fieldref [de/uvwxy/barometer/a.h Landroid/graphics/Bitmap;]
+      [708] aload_0 v0
+      [709] aconst_null
+      [710] putfield #155
+        + Fieldref [de/uvwxy/barometer/a.i Landroid/graphics/Bitmap;]
+      [713] aload_0 v0
+      [714] aconst_null
+      [715] putfield #156
         + Fieldref [de/uvwxy/barometer/a.j Landroid/graphics/Bitmap;]
-      [777] aload_0 v0
-      [778] aconst_null
-      [779] putfield #169
-        + Fieldref [de/uvwxy/barometer/a.k Landroid/graphics/Bitmap;]
-      [782] aload_0 v0
-      [783] aconst_null
-      [784] putfield #170
-        + Fieldref [de/uvwxy/barometer/a.l Landroid/graphics/Bitmap;]
-      [787] aload_0 v0
-      [788] aconst_null
-      [789] putfield #171
-        + Fieldref [de/uvwxy/barometer/a.m Landroid/graphics/Bitmap;]
-      [792] return
+      [718] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   + Method:       a(Landroid/content/Context;)V
@@ -67693,358 +67594,431 @@ Methods (count = 5):
       = protected void a(android.content.Context)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 70, locals = 3, stack = 4):
-      [0] new #43
+      [0] new #31
         + Class [android/graphics/BitmapFactory$Options]
       [3] dup
-      [4] invokespecial #177
+      [4] invokespecial #162
         + Methodref [android/graphics/BitmapFactory$Options.<init> ()V]
       [7] astore_2 v2
       [8] aload_2 v2
       [9] iconst_0
-      [10] putfield #157
+      [10] putfield #145
         + Fieldref [android/graphics/BitmapFactory$Options.inScaled Z]
       [13] aload_0 v0
       [14] aload_1 v1
-      [15] invokevirtual #172
+      [15] invokevirtual #157
         + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
       [18] ldc #2
         + Integer [2130837504]
       [20] aload_2 v2
-      [21] invokestatic #176
+      [21] invokestatic #161
         + Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
-      [24] putfield #168
-        + Fieldref [de/uvwxy/barometer/a.j Landroid/graphics/Bitmap;]
+      [24] putfield #153
+        + Fieldref [de/uvwxy/barometer/a.g Landroid/graphics/Bitmap;]
       [27] aload_0 v0
       [28] aload_1 v1
-      [29] invokevirtual #172
+      [29] invokevirtual #157
         + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
       [32] ldc #5
         + Integer [2130837507]
       [34] aload_2 v2
-      [35] invokestatic #176
+      [35] invokestatic #161
         + Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
-      [38] putfield #169
-        + Fieldref [de/uvwxy/barometer/a.k Landroid/graphics/Bitmap;]
+      [38] putfield #154
+        + Fieldref [de/uvwxy/barometer/a.h Landroid/graphics/Bitmap;]
       [41] aload_0 v0
       [42] aload_1 v1
-      [43] invokevirtual #172
+      [43] invokevirtual #157
         + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
       [46] ldc #3
         + Integer [2130837505]
       [48] aload_2 v2
-      [49] invokestatic #176
+      [49] invokestatic #161
         + Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
-      [52] putfield #170
-        + Fieldref [de/uvwxy/barometer/a.l Landroid/graphics/Bitmap;]
+      [52] putfield #155
+        + Fieldref [de/uvwxy/barometer/a.i Landroid/graphics/Bitmap;]
       [55] aload_0 v0
       [56] aload_1 v1
-      [57] invokevirtual #172
+      [57] invokevirtual #157
         + Methodref [android/content/Context.getResources ()Landroid/content/res/Resources;]
       [60] ldc #4
         + Integer [2130837506]
       [62] aload_2 v2
-      [63] invokestatic #176
+      [63] invokestatic #161
         + Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;]
-      [66] putfield #171
-        + Fieldref [de/uvwxy/barometer/a.m Landroid/graphics/Bitmap;]
+      [66] putfield #156
+        + Fieldref [de/uvwxy/barometer/a.j Landroid/graphics/Bitmap;]
       [69] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
-  + Method:       a(F)F
+  + Method:       a(FI)F
     Access flags: 0x2
-      = private float a(float)
+      = private float a(float,int)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 52, locals = 5, stack = 4):
-      [0] ldc #7
+    + Code attribute instructions (code length = 158, locals = 11, stack = 5):
+      [0] aload_0 v0
+      [1] getfield #147
+        + Fieldref [de/uvwxy/barometer/a.a [[D]
+      [4] iload_2 v2
+      [5] iconst_1
+      [6] isub
+      [7] aaload
+      [8] iconst_1
+      [9] daload
+      [10] aload_0 v0
+      [11] getfield #147
+        + Fieldref [de/uvwxy/barometer/a.a [[D]
+      [14] iload_2 v2
+      [15] iconst_1
+      [16] isub
+      [17] aaload
+      [18] iconst_0
+      [19] daload
+      [20] dsub
+      [21] d2f
+      [22] fstore_3 v3
+      [23] iload_2 v2
+      [24] invokestatic #179
+        + Methodref [de/uvwxy/barometer/f.a (I)Lde/uvwxy/d/c;]
+      [27] astore v4
+      [29] aload v4
+      [31] fload_3 v3
+      [32] f2d
+      [33] invokevirtual #182
+        + Methodref [de/uvwxy/d/c.a (D)Lde/uvwxy/d/c;]
+      [36] pop
+      [37] aload v4
+      [39] ldc #23
+        + String [MILLI_BAR]
+      [41] invokestatic #184
+        + Methodref [de/uvwxy/d/c.a (Ljava/lang/String;)Lde/uvwxy/d/c;]
+      [44] invokevirtual #183
+        + Methodref [de/uvwxy/d/c.a (Lde/uvwxy/d/c;)Lde/uvwxy/d/c;]
+      [47] invokevirtual #185
+        + Methodref [de/uvwxy/d/c.b ()D]
+      [50] d2f
+      [51] fstore v5
+      [53] ldc #9
+        + Float [30.0]
+      [55] fload v5
+      [57] fdiv
+      [58] fstore v6
+      [60] aload v4
+      [62] aload_0 v0
+      [63] getfield #147
+        + Fieldref [de/uvwxy/barometer/a.a [[D]
+      [66] iload_2 v2
+      [67] iconst_1
+      [68] isub
+      [69] aaload
+      [70] iconst_0
+      [71] daload
+      [72] invokevirtual #182
+        + Methodref [de/uvwxy/d/c.a (D)Lde/uvwxy/d/c;]
+      [75] pop
+      [76] aload v4
+      [78] ldc #23
+        + String [MILLI_BAR]
+      [80] invokestatic #184
+        + Methodref [de/uvwxy/d/c.a (Ljava/lang/String;)Lde/uvwxy/d/c;]
+      [83] invokevirtual #183
+        + Methodref [de/uvwxy/d/c.a (Lde/uvwxy/d/c;)Lde/uvwxy/d/c;]
+      [86] invokevirtual #185
+        + Methodref [de/uvwxy/d/c.b ()D]
+      [89] d2f
+      [90] fstore v7
+      [92] ldc #6
         + Float [-135.0]
-      [2] fload_1 v1
-      [3] aload_0 v0
-      [4] getfield #159
-        + Fieldref [de/uvwxy/barometer/a.a [F]
-      [7] iconst_0
-      [8] faload
-      [9] fsub
-      [10] ldc #9
-        + Float [3.0]
-      [12] fmul
-      [13] fadd
-      [14] fstore_2 v2
-      [15] ldc #6
-        + Float [-150.0]
-      [17] fstore_3 v3
-      [18] fload_3 v3
-      [19] ldc #8
+      [94] fload_1 v1
+      [95] fload v7
+      [97] fsub
+      [98] fload v6
+      [100] fmul
+      [101] fadd
+      [102] fstore v8
+      [104] ldc #6
+        + Float [-135.0]
+      [106] fload v6
+      [108] ldc #8
+        + Float [5.0]
+      [110] fmul
+      [111] fsub
+      [112] fstore v9
+      [114] fload v9
+      [116] ldc #7
         + Float [-1.0]
-      [21] fmul
-      [22] fstore v4
-      [24] fload_2 v2
-      [25] fload_3 v3
-      [26] fcmpg
-      [27] ifge +7 (target=34)
-      [30] fload_3 v3
-      [31] goto +4 (target=35)
-      [34] fload_2 v2
-      [35] fstore_2 v2
-      [36] fload_2 v2
-      [37] fload v4
-      [39] fcmpl
-      [40] ifle +8 (target=48)
-      [43] fload v4
-      [45] goto +4 (target=49)
-      [48] fload_2 v2
-      [49] fstore_2 v2
-      [50] fload_2 v2
-      [51] freturn
+      [118] fmul
+      [119] fstore v10
+      [121] fload v8
+      [123] fload v9
+      [125] fcmpg
+      [126] ifge +8 (target=134)
+      [129] fload v9
+      [131] goto +5 (target=136)
+      [134] fload v8
+      [136] fstore v8
+      [138] fload v8
+      [140] fload v10
+      [142] fcmpl
+      [143] ifle +8 (target=151)
+      [146] fload v10
+      [148] goto +5 (target=153)
+      [151] fload v8
+      [153] fstore v8
+      [155] fload v8
+      [157] freturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 4):
-        - [34] Var: ...[f][f][f], Stack: (empty)
-        - [35] Var: ..., Stack: [f]
-        - [48] Var: ..., Stack: (empty)
-        - [49] Var: ..., Stack: [f]
+        - [134] Var: [a:de/uvwxy/barometer/a][f][i][f][a:de/uvwxy/d/c][f][f][f][f][f][f], Stack: 
+        - [136] Var: ..., Stack: [f]
+        - [151] Var: ..., Stack: (empty)
+        - [153] Var: ..., Stack: [f]
   + Method:       a(FFII)Landroid/graphics/Bitmap;
     Access flags: 0x4
       = protected android.graphics.Bitmap a(float,float,int,int)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 345, locals = 9, stack = 5):
+    + Code attribute instructions (code length = 347, locals = 9, stack = 5):
       [0] aload_0 v0
       [1] iload_3 v3
-      [2] invokevirtual #193
+      [2] invokevirtual #178
         + Methodref [de/uvwxy/barometer/a.a (I)Landroid/graphics/Bitmap;]
       [5] astore v5
-      [7] new #44
+      [7] new #32
         + Class [android/graphics/Canvas]
       [10] dup
       [11] aload v5
-      [13] invokespecial #178
+      [13] invokespecial #163
         + Methodref [android/graphics/Canvas.<init> (Landroid/graphics/Bitmap;)V]
       [16] astore v6
-      [18] new #46
+      [18] new #34
         + Class [android/graphics/Paint]
       [21] dup
-      [22] invokespecial #188
+      [22] invokespecial #173
         + Methodref [android/graphics/Paint.<init> ()V]
       [25] astore v7
       [27] aload v7
-      [29] ldc #12
+      [29] ldc #10
         + Float [32.0]
-      [31] invokevirtual #191
+      [31] invokevirtual #176
         + Methodref [android/graphics/Paint.setTextSize (F)V]
       [34] aload v7
       [36] iconst_1
-      [37] invokevirtual #189
+      [37] invokevirtual #174
         + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
       [40] aload v7
-      [42] getstatic #158
+      [42] getstatic #146
         + Fieldref [android/graphics/Paint$Align.CENTER Landroid/graphics/Paint$Align;]
-      [45] invokevirtual #190
+      [45] invokevirtual #175
         + Methodref [android/graphics/Paint.setTextAlign (Landroid/graphics/Paint$Align;)V]
-      [48] new #45
+      [48] new #33
         + Class [android/graphics/Matrix]
       [51] dup
-      [52] invokespecial #186
+      [52] invokespecial #171
         + Methodref [android/graphics/Matrix.<init> ()V]
       [55] astore v8
       [57] aload v8
       [59] aload_0 v0
       [60] fload_1 v1
-      [61] invokespecial #192
-        + Methodref [de/uvwxy/barometer/a.a (F)F]
-      [64] aload v6
-      [66] invokevirtual #182
+      [61] iload_3 v3
+      [62] invokespecial #177
+        + Methodref [de/uvwxy/barometer/a.a (FI)F]
+      [65] aload v6
+      [67] invokevirtual #167
         + Methodref [android/graphics/Canvas.getWidth ()I]
-      [69] iconst_2
-      [70] idiv
-      [71] i2f
-      [72] aload v6
-      [74] invokevirtual #181
+      [70] iconst_2
+      [71] idiv
+      [72] i2f
+      [73] aload v6
+      [75] invokevirtual #166
         + Methodref [android/graphics/Canvas.getHeight ()I]
-      [77] iconst_2
-      [78] idiv
-      [79] i2f
-      [80] invokevirtual #187
+      [78] iconst_2
+      [79] idiv
+      [80] i2f
+      [81] invokevirtual #172
         + Methodref [android/graphics/Matrix.setRotate (FFF)V]
-      [83] aload v6
-      [85] aload_0 v0
-      [86] getfield #170
-        + Fieldref [de/uvwxy/barometer/a.l Landroid/graphics/Bitmap;]
-      [89] aload v8
-      [91] aload v7
-      [93] invokevirtual #179
+      [84] aload v6
+      [86] aload_0 v0
+      [87] getfield #155
+        + Fieldref [de/uvwxy/barometer/a.i Landroid/graphics/Bitmap;]
+      [90] aload v8
+      [92] aload v7
+      [94] invokevirtual #164
         + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V]
-      [96] aload v8
-      [98] aload_0 v0
-      [99] fload_2 v2
-      [100] invokespecial #192
-        + Methodref [de/uvwxy/barometer/a.a (F)F]
-      [103] aload v6
-      [105] invokevirtual #182
+      [97] aload v8
+      [99] aload_0 v0
+      [100] fload_2 v2
+      [101] iload_3 v3
+      [102] invokespecial #177
+        + Methodref [de/uvwxy/barometer/a.a (FI)F]
+      [105] aload v6
+      [107] invokevirtual #167
         + Methodref [android/graphics/Canvas.getWidth ()I]
-      [108] iconst_2
-      [109] idiv
-      [110] i2f
-      [111] aload v6
-      [113] invokevirtual #181
+      [110] iconst_2
+      [111] idiv
+      [112] i2f
+      [113] aload v6
+      [115] invokevirtual #166
         + Methodref [android/graphics/Canvas.getHeight ()I]
-      [116] iconst_2
-      [117] idiv
-      [118] i2f
-      [119] invokevirtual #187
+      [118] iconst_2
+      [119] idiv
+      [120] i2f
+      [121] invokevirtual #172
         + Methodref [android/graphics/Matrix.setRotate (FFF)V]
-      [122] aload v6
-      [124] aload_0 v0
-      [125] getfield #171
-        + Fieldref [de/uvwxy/barometer/a.m Landroid/graphics/Bitmap;]
-      [128] aload v8
-      [130] aload v7
-      [132] invokevirtual #179
+      [124] aload v6
+      [126] aload_0 v0
+      [127] getfield #156
+        + Fieldref [de/uvwxy/barometer/a.j Landroid/graphics/Bitmap;]
+      [130] aload v8
+      [132] aload v7
+      [134] invokevirtual #164
         + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V]
-      [135] new #45
+      [137] new #33
         + Class [android/graphics/Matrix]
-      [138] dup
-      [139] invokespecial #186
+      [140] dup
+      [141] invokespecial #171
         + Methodref [android/graphics/Matrix.<init> ()V]
-      [142] astore v8
-      [144] aload v6
-      [146] aload_0 v0
-      [147] getfield #169
-        + Fieldref [de/uvwxy/barometer/a.k Landroid/graphics/Bitmap;]
-      [150] aload v8
-      [152] aload v7
-      [154] invokevirtual #179
+      [144] astore v8
+      [146] aload v6
+      [148] aload_0 v0
+      [149] getfield #154
+        + Fieldref [de/uvwxy/barometer/a.h Landroid/graphics/Bitmap;]
+      [152] aload v8
+      [154] aload v7
+      [156] invokevirtual #164
         + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V]
-      [157] aload v6
-      [159] ldc #35
+      [159] aload v6
+      [161] ldc #23
         + String [MILLI_BAR]
-      [161] invokestatic #199
+      [163] invokestatic #184
         + Methodref [de/uvwxy/d/c.a (Ljava/lang/String;)Lde/uvwxy/d/c;]
-      [164] fload_1 v1
-      [165] f2d
-      [166] invokevirtual #197
+      [166] fload_1 v1
+      [167] f2d
+      [168] invokevirtual #182
         + Methodref [de/uvwxy/d/c.a (D)Lde/uvwxy/d/c;]
-      [169] iload_3 v3
-      [170] invokestatic #194
+      [171] iload_3 v3
+      [172] invokestatic #179
         + Methodref [de/uvwxy/barometer/f.a (I)Lde/uvwxy/d/c;]
-      [173] invokevirtual #198
+      [175] invokevirtual #183
         + Methodref [de/uvwxy/d/c.a (Lde/uvwxy/d/c;)Lde/uvwxy/d/c;]
-      [176] invokevirtual #200
+      [178] invokevirtual #186
         + Methodref [de/uvwxy/d/c.toString ()Ljava/lang/String;]
-      [179] aload v6
-      [181] invokevirtual #182
+      [181] aload v6
+      [183] invokevirtual #167
         + Methodref [android/graphics/Canvas.getWidth ()I]
-      [184] iconst_2
-      [185] idiv
-      [186] i2f
-      [187] aload v6
-      [189] invokevirtual #181
+      [186] iconst_2
+      [187] idiv
+      [188] i2f
+      [189] aload v6
+      [191] invokevirtual #166
         + Methodref [android/graphics/Canvas.getHeight ()I]
-      [192] sipush 192
-      [195] isub
-      [196] i2f
-      [197] aload v7
-      [199] invokevirtual #180
+      [194] sipush 192
+      [197] isub
+      [198] i2f
+      [199] aload v7
+      [201] invokevirtual #165
         + Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
-      [202] aload v6
-      [204] new #55
+      [204] aload v6
+      [206] new #43
         + Class [java/lang/StringBuilder]
-      [207] dup
-      [208] ldc #36
+      [209] dup
+      [210] ldc #24
         + String [[]
-      [210] invokespecial #204
+      [212] invokespecial #190
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [213] ldc #35
+      [215] ldc #23
         + String [MILLI_BAR]
-      [215] invokestatic #199
+      [217] invokestatic #184
         + Methodref [de/uvwxy/d/c.a (Ljava/lang/String;)Lde/uvwxy/d/c;]
-      [218] fload_1 v1
-      [219] fload_2 v2
-      [220] fsub
-      [221] f2d
-      [222] invokevirtual #197
+      [220] fload_1 v1
+      [221] fload_2 v2
+      [222] fsub
+      [223] f2d
+      [224] invokevirtual #182
         + Methodref [de/uvwxy/d/c.a (D)Lde/uvwxy/d/c;]
-      [225] iload_3 v3
-      [226] invokestatic #194
+      [227] iload_3 v3
+      [228] invokestatic #179
         + Methodref [de/uvwxy/barometer/f.a (I)Lde/uvwxy/d/c;]
-      [229] invokevirtual #198
+      [231] invokevirtual #183
         + Methodref [de/uvwxy/d/c.a (Lde/uvwxy/d/c;)Lde/uvwxy/d/c;]
-      [232] invokevirtual #200
+      [234] invokevirtual #186
         + Methodref [de/uvwxy/d/c.toString ()Ljava/lang/String;]
-      [235] invokevirtual #206
+      [237] invokevirtual #192
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [238] ldc #37
+      [240] ldc #25
         + String []]
-      [240] invokevirtual #206
+      [242] invokevirtual #192
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [243] invokevirtual #207
+      [245] invokevirtual #193
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [246] aload v6
-      [248] invokevirtual #182
+      [248] aload v6
+      [250] invokevirtual #167
         + Methodref [android/graphics/Canvas.getWidth ()I]
-      [251] iconst_2
-      [252] idiv
-      [253] i2f
-      [254] aload v6
-      [256] invokevirtual #181
+      [253] iconst_2
+      [254] idiv
+      [255] i2f
+      [256] aload v6
+      [258] invokevirtual #166
         + Methodref [android/graphics/Canvas.getHeight ()I]
-      [259] sipush 192
-      [262] isub
-      [263] bipush 32
-      [265] iadd
-      [266] i2f
-      [267] aload v7
-      [269] invokevirtual #180
+      [261] sipush 192
+      [264] isub
+      [265] bipush 32
+      [267] iadd
+      [268] i2f
+      [269] aload v7
+      [271] invokevirtual #165
         + Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
-      [272] aload v6
-      [274] new #55
+      [274] aload v6
+      [276] new #43
         + Class [java/lang/StringBuilder]
-      [277] dup
-      [278] ldc #36
+      [279] dup
+      [280] ldc #24
         + String [[]
-      [280] invokespecial #204
+      [282] invokespecial #190
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [283] ldc #34
+      [285] ldc #22
         + String [METRE]
-      [285] invokestatic #199
+      [287] invokestatic #184
         + Methodref [de/uvwxy/d/c.a (Ljava/lang/String;)Lde/uvwxy/d/c;]
-      [288] fload_1 v1
-      [289] fload_2 v2
-      [290] invokestatic #196
+      [290] fload_1 v1
+      [291] fload_2 v2
+      [292] invokestatic #181
         + Methodref [de/uvwxy/c/a.b (FF)F]
-      [293] f2d
-      [294] invokevirtual #197
+      [295] f2d
+      [296] invokevirtual #182
         + Methodref [de/uvwxy/d/c.a (D)Lde/uvwxy/d/c;]
-      [297] iload v4
-      [299] invokestatic #195
+      [299] iload v4
+      [301] invokestatic #180
         + Methodref [de/uvwxy/barometer/f.b (I)Lde/uvwxy/d/c;]
-      [302] invokevirtual #198
+      [304] invokevirtual #183
         + Methodref [de/uvwxy/d/c.a (Lde/uvwxy/d/c;)Lde/uvwxy/d/c;]
-      [305] invokevirtual #205
+      [307] invokevirtual #191
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [308] ldc #37
+      [310] ldc #25
         + String []]
-      [310] invokevirtual #206
+      [312] invokevirtual #192
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [313] invokevirtual #207
+      [315] invokevirtual #193
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [316] aload v6
-      [318] invokevirtual #182
+      [318] aload v6
+      [320] invokevirtual #167
         + Methodref [android/graphics/Canvas.getWidth ()I]
-      [321] iconst_2
-      [322] idiv
-      [323] i2f
-      [324] aload v6
-      [326] invokevirtual #181
+      [323] iconst_2
+      [324] idiv
+      [325] i2f
+      [326] aload v6
+      [328] invokevirtual #166
         + Methodref [android/graphics/Canvas.getHeight ()I]
-      [329] sipush 192
-      [332] isub
-      [333] bipush 64
-      [335] iadd
-      [336] i2f
-      [337] aload v7
-      [339] invokevirtual #180
+      [331] sipush 192
+      [334] isub
+      [335] bipush 64
+      [337] iadd
+      [338] i2f
+      [339] aload v7
+      [341] invokevirtual #165
         + Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
-      [342] aload v5
-      [344] areturn
+      [344] aload v5
+      [346] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   + Method:       a(I)Landroid/graphics/Bitmap;
@@ -68052,154 +68026,154 @@ Methods (count = 5):
       = protected android.graphics.Bitmap a(int)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 221, locals = 7, stack = 8):
-      [0] new #46
+      [0] new #34
         + Class [android/graphics/Paint]
       [3] dup
-      [4] invokespecial #188
+      [4] invokespecial #173
         + Methodref [android/graphics/Paint.<init> ()V]
       [7] astore_2 v2
       [8] aload_2 v2
-      [9] ldc #12
+      [9] ldc #10
         + Float [32.0]
-      [11] invokevirtual #191
+      [11] invokevirtual #176
         + Methodref [android/graphics/Paint.setTextSize (F)V]
       [14] aload_2 v2
       [15] iconst_1
-      [16] invokevirtual #189
+      [16] invokevirtual #174
         + Methodref [android/graphics/Paint.setAntiAlias (Z)V]
       [19] aload_2 v2
-      [20] getstatic #158
+      [20] getstatic #146
         + Fieldref [android/graphics/Paint$Align.CENTER Landroid/graphics/Paint$Align;]
-      [23] invokevirtual #190
+      [23] invokevirtual #175
         + Methodref [android/graphics/Paint.setTextAlign (Landroid/graphics/Paint$Align;)V]
-      [26] new #45
+      [26] new #33
         + Class [android/graphics/Matrix]
       [29] dup
-      [30] invokespecial #186
+      [30] invokespecial #171
         + Methodref [android/graphics/Matrix.<init> ()V]
       [33] astore_3 v3
       [34] aload_0 v0
-      [35] getfield #168
-        + Fieldref [de/uvwxy/barometer/a.j Landroid/graphics/Bitmap;]
-      [38] invokevirtual #175
+      [35] getfield #153
+        + Fieldref [de/uvwxy/barometer/a.g Landroid/graphics/Bitmap;]
+      [38] invokevirtual #160
         + Methodref [android/graphics/Bitmap.getWidth ()I]
       [41] aload_0 v0
-      [42] getfield #168
-        + Fieldref [de/uvwxy/barometer/a.j Landroid/graphics/Bitmap;]
-      [45] invokevirtual #174
+      [42] getfield #153
+        + Fieldref [de/uvwxy/barometer/a.g Landroid/graphics/Bitmap;]
+      [45] invokevirtual #159
         + Methodref [android/graphics/Bitmap.getHeight ()I]
-      [48] getstatic #156
+      [48] getstatic #144
         + Fieldref [android/graphics/Bitmap$Config.ARGB_8888 Landroid/graphics/Bitmap$Config;]
-      [51] invokestatic #173
+      [51] invokestatic #158
         + Methodref [android/graphics/Bitmap.createBitmap (IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;]
       [54] astore v4
-      [56] new #44
+      [56] new #32
         + Class [android/graphics/Canvas]
       [59] dup
       [60] aload v4
-      [62] invokespecial #178
+      [62] invokespecial #163
         + Methodref [android/graphics/Canvas.<init> (Landroid/graphics/Bitmap;)V]
       [65] astore v5
       [67] aload v5
       [69] aload_0 v0
-      [70] getfield #168
-        + Fieldref [de/uvwxy/barometer/a.j Landroid/graphics/Bitmap;]
+      [70] getfield #153
+        + Fieldref [de/uvwxy/barometer/a.g Landroid/graphics/Bitmap;]
       [73] aload_3 v3
       [74] aload_2 v2
-      [75] invokevirtual #179
+      [75] invokevirtual #164
         + Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V]
       [78] iload_1 v1
       [79] aload_0 v0
-      [80] getfield #160
-        + Fieldref [de/uvwxy/barometer/a.b [[D]
+      [80] getfield #147
+        + Fieldref [de/uvwxy/barometer/a.a [[D]
       [83] arraylength
       [84] ificmple +6 (target=90)
       [87] aload v4
       [89] areturn
       [90] aload v5
-      [92] invokevirtual #185
+      [92] invokevirtual #170
         + Methodref [android/graphics/Canvas.save ()I]
       [95] pop
       [96] aload v5
-      [98] ldc #7
+      [98] ldc #6
         + Float [-135.0]
       [100] aload v5
-      [102] invokevirtual #182
+      [102] invokevirtual #167
         + Methodref [android/graphics/Canvas.getWidth ()I]
       [105] iconst_2
       [106] idiv
       [107] i2f
       [108] aload v5
-      [110] invokevirtual #181
+      [110] invokevirtual #166
         + Methodref [android/graphics/Canvas.getHeight ()I]
       [113] iconst_2
       [114] idiv
       [115] i2f
-      [116] invokevirtual #184
+      [116] invokevirtual #169
         + Methodref [android/graphics/Canvas.rotate (FFF)V]
       [119] iconst_0
       [120] istore v6
       [122] goto +77 (target=199)
       [125] aload v5
       [127] aload_0 v0
-      [128] getfield #162
-        + Fieldref [de/uvwxy/barometer/a.d [Ljava/lang/String;]
+      [128] getfield #149
+        + Fieldref [de/uvwxy/barometer/a.c [Ljava/lang/String;]
       [131] iload_1 v1
       [132] iconst_1
       [133] isub
       [134] aaload
       [135] iconst_1
-      [136] anewarray #53
+      [136] anewarray #41
         + Class [java/lang/Object]
       [139] dup
       [140] iconst_0
       [141] aload_0 v0
-      [142] getfield #160
-        + Fieldref [de/uvwxy/barometer/a.b [[D]
+      [142] getfield #147
+        + Fieldref [de/uvwxy/barometer/a.a [[D]
       [145] iload_1 v1
       [146] iconst_1
       [147] isub
       [148] aaload
       [149] iload v6
       [151] daload
-      [152] invokestatic #201
+      [152] invokestatic #187
         + Methodref [java/lang/Double.valueOf (D)Ljava/lang/Double;]
       [155] aastore
-      [156] invokestatic #203
+      [156] invokestatic #189
         + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
       [159] aload v5
-      [161] invokevirtual #182
+      [161] invokevirtual #167
         + Methodref [android/graphics/Canvas.getWidth ()I]
       [164] iconst_2
       [165] idiv
       [166] i2f
-      [167] ldc #13
+      [167] ldc #11
         + Float [192.0]
       [169] aload_2 v2
-      [170] invokevirtual #180
+      [170] invokevirtual #165
         + Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
       [173] aload v5
-      [175] ldc #11
+      [175] ldc #9
         + Float [30.0]
       [177] aload v5
-      [179] invokevirtual #182
+      [179] invokevirtual #167
         + Methodref [android/graphics/Canvas.getWidth ()I]
       [182] iconst_2
       [183] idiv
       [184] i2f
       [185] aload v5
-      [187] invokevirtual #181
+      [187] invokevirtual #166
         + Methodref [android/graphics/Canvas.getHeight ()I]
       [190] iconst_2
       [191] idiv
       [192] i2f
-      [193] invokevirtual #184
+      [193] invokevirtual #169
         + Methodref [android/graphics/Canvas.rotate (FFF)V]
       [196] iinc v6, 1
       [199] iload v6
       [201] aload_0 v0
-      [202] getfield #160
-        + Fieldref [de/uvwxy/barometer/a.b [[D]
+      [202] getfield #147
+        + Fieldref [de/uvwxy/barometer/a.a [[D]
       [205] iload_1 v1
       [206] iconst_1
       [207] isub
@@ -68207,7 +68181,7 @@ Methods (count = 5):
       [209] arraylength
       [210] ificmplt -85 (target=125)
       [213] aload v5
-      [215] invokevirtual #183
+      [215] invokevirtual #168
         + Methodref [android/graphics/Canvas.restore ()V]
       [218] aload v4
       [220] areturn

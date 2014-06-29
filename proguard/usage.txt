@@ -1683,7 +1683,6 @@ de.uvwxy.R$string
 de.uvwxy.audio.AudioParameters
 de.uvwxy.barometer.Barometer:
     private static final int TEXT_SIZE
-    55:55:protected float getFirstMillis()
 de.uvwxy.barometer.BuildConfig
 de.uvwxy.barometer.FragmentBarometer:
     protected static final java.lang.String PREF_ID
